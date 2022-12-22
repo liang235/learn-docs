@@ -60,6 +60,7 @@ export default [
 			{ text: 'vite-plugin-html', link: `${commonPath2}/vite-plugin-html.md` },
 			{ text: 'vite-plugin-style-import', link: `${commonPath2}/vite-plugin-style-import.md` },
 			{ text: 'vite-plugin-vue-inspector', link: `${commonPath2}/vite-plugin-vue-inspector.md` },
+			{ text: 'vite-plugin-compression', link: `${commonPath2}/vite-plugin-compression.md` },
 		],
 	},
 ]
