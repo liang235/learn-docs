@@ -1,0 +1,72 @@
+/*
+ * @Description: 自定义 CSS
+ * @Date: 2022-09-08 17:09:23
+ * @LastEditTime: 2022-11-21 16:32:08
+ */
+.container {
+	.main {
+		.name {
+			.clip {
+				font-size: 40px !important;
+			}
+		}
+
+		p.text {
+			background: linear-gradient(to right, #f00, var(--vp-c-brand));
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			display: inline-block;
+			font-size: 30px !important;
+		}
+	}
+}
+
+.VPFeature {
+	position: relative;
+}
+
+.VPFeature .icon {
+	margin-bottom: 8px;
+}
+
+.VPFeature .title {
+	position: absolute;
+	top: 36px;
+	left: 85px;
+	font-size: 18px;
+}
+
+/* 自定义代码块 */
+:root {
+	--vp-custom-block-tip-border: var(--vp-c-brand);
+	--vp-custom-block-tip-text: var(--vp-c-brand-darker);
+	--vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+	--vp-custom-block-tip-border: var(--vp-c-brand);
+	--vp-custom-block-tip-text: var(--vp-c-brand-lighter);
+	--vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.custom-block.details summary {
+	cursor: pointer;
+}
+
+/* 专业版 badge */
+.pro-badge {
+	display: inline-block;
+	border-radius: 6px;
+	font-size: 0.65em;
+	line-height: 1;
+	font-weight: 600;
+	padding: 0.35em 0.4em 0.3em;
+	top: -0.65em;
+	color: #333;
+	background-color: #e7c605;
+}
+
+.pro-badge:before {
+	content: '专业版';
+}

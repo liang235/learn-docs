@@ -10,7 +10,13 @@
 		"build": "vitepress build docs",
 		"preview": "vitepress preview docs"
 	},
+	"dependencies": {
+		"medium-zoom": "^1.0.8"
+	},
 	"devDependencies": {
+		"postcss": "^8.4.20",
+		"postcss-prefix-selector": "^1.16.0",
+		"sass": "^1.57.1",
 		"vitepress": "^1.0.0-alpha.33",
 		"vue": "^3.2.45"
 	},
