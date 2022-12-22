@@ -81,7 +81,7 @@ jobs:
                   # 注意替换为你的 GitHub 源仓库地址
                   source-repo: git@github.com:liang235/learn-docs.git
                   # 注意替换为你的 Gitee 目标仓库地址
-                  destination-repo: https://gitee.com/cdl235/learn-docs.git
+                  destination-repo: git@gitee.com:cdl235/learn-docs.git
 
             - name: Build Gitee Pages
               uses: yanglbme/gitee-pages-action@main
