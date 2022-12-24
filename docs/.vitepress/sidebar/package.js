@@ -12,7 +12,7 @@ export default [
 	{
 		text: 'dependencies',
 		collapsible: true, // 是否可折叠的侧边栏组
-		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+		collapsed: true, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			// 默认展示 `/plugin/index.md` page.
 			{ text: 'vue-router', link: `${commonPath1}/vue-router.md` },
@@ -44,7 +44,7 @@ export default [
 	{
 		text: 'devDependencies',
 		collapsible: true, // 是否可折叠的侧边栏组
-		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+		collapsed: true, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: 'plugin-vue', link: `${commonPath2}/plugin-vue.md` },
 			{ text: 'autoprefixer', link: `${commonPath2}/autoprefixer.md` },
@@ -61,6 +61,8 @@ export default [
 			{ text: 'vite-plugin-style-import', link: `${commonPath2}/vite-plugin-style-import.md` },
 			{ text: 'vite-plugin-vue-inspector', link: `${commonPath2}/vite-plugin-vue-inspector.md` },
 			{ text: 'vite-plugin-compression', link: `${commonPath2}/vite-plugin-compression.md` },
+			{ text: 'stylelint', link: `${commonPath2}/stylelint.md` },
+			{ text: 'eslint', link: `${commonPath2}/eslint.md` },
 		],
 	},
 ]
