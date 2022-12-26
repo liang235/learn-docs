@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2022-12-23 19:18:32
+ * @LastEditTime: 2022-12-25 16:28:54
  */
 import { defineConfig } from 'vitepress'
 import guideSidebar from './sidebar/guide.js' // 指南
@@ -17,9 +17,10 @@ import javaSidebar from './sidebar/java.js' // JavaScript
 import nodejsSidebar from './sidebar/nodejs.js' // NodeJs
 import elementPlusSidebar from './sidebar/element-plus.js' // Element-plus
 import otherSidebar from './sidebar/other.js' // 其他
+import directorySidebar from './sidebar/directory.js' // 目录结构
 
 export default defineConfig({
-	title: '官方文档', // 站点的标题，浏览器 title 部分
+	title: '学习文档', // 站点的标题，浏览器 title 部分
 	description: '一款开箱即用的 Vue 中后台管理系统框架，采用 Vue3 + Vite2 技术栈',
 	lang: 'zh-cn', // 语言
 	base: '/learn-docs/',
@@ -51,6 +52,7 @@ export default defineConfig({
 			'/nodejs/': nodejsSidebar,
 			'/element-plus/': elementPlusSidebar,
 			'/other/': otherSidebar,
+			'/directory/': directorySidebar,
 		},
 
 		// 右侧 导航链接
@@ -67,6 +69,7 @@ export default defineConfig({
 							{ text: '准备工作', link: '/guide/ready' },
 							{ text: 'components 组件', link: '/components/index' },
 							{ text: 'package.json', link: '/package/index' },
+							{ text: '目录结构', link: '/directory/index' },
 						],
 					},
 				],

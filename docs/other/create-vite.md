@@ -1,7 +1,7 @@
 # 搭建项目
 在 vue3 、ts、vite 项目中使用 eslint 与 prettier 与 stylelint 与 husky 的详细指南
 
-- eslint: 可以保证项目的质量
+- [eslint](https://zh-hans.eslint.org/docs/latest/user-guide/getting-started): 可以保证项目的质量
 - prettier: 以保证项目的统一格式、风格
 - stylelint: css 样式的格式、风格
 - husky: 是一个用来管理 git hook 的工具
@@ -17,8 +17,12 @@ pnpm create vite my-vue-app --template vue
 ## 配置 eslint
 - 安装
 ```
-pnpm add eslint -D
+pnpm add eslint eslint-config-airbnb-base eslint-plugin-import eslint-config-prettier eslint-plugin-prettier
 ```
+- eslint-config-airbnb-base: eslint 规则
+- eslint-plugin-import: eslint-config-airbnb-base 前置插件
+- eslint-config-prettier: 解决与 prettier 冲突
+- eslint-plugin-prettier: 解决与 prettier 冲突
 
 - 初始化 eslint
 ```
@@ -56,66 +60,40 @@ pnpm eslint --init
 - 此时打开 .eslintrc.cjs 配置文件会出现一个报错，需要再 env 字段中增 加 node: true 配置以解决 eslint 找不到 module 的报错
 ``` js
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true
-    },
-    extends: ['eslint:recommended', 'plugin:vue/vue3-essential'],
-    overrides: [
-        // 需要安装 vue-eslint-parser
-        // {
-        //     files: ['*.ts', '*.tsx', '*.vue'],
-        //     rules: {
-        //         'no-undef': 'off'
-        //     }
-        // }
+	env: {
+		browser: true,
+		es2021: true,
+		node: true,
+	},
+	// extends: ['eslint:recommended', 'plugin:vue/vue3-essential'], // 默认规则
+	extends: [
+        'plugin:vue/vue3-essential',
+        'eslint-config-airbnb-base',
+        'plugin:prettier/recommended',
     ],
-    parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module'
-    },
-    plugins: ['vue'],
-    rules: {
-        // http://eslint.cn/docs/rules/
-        // https://eslint.vuejs.org/rules/
-        // https://typescript-eslint.io/rules/no-unused-vars/
-        'vue/custom-event-name-casing': 'off',
-        'vue/attributes-order': 'off',
-        'vue/one-component-per-file': 'off',
-        'vue/html-closing-bracket-newline': 'off',
-        'vue/max-attributes-per-line': 'off',
-        'vue/multiline-html-element-content-newline': 'off',
-        'vue/singleline-html-element-content-newline': 'off',
-        'vue/attribute-hyphenation': 'off',
-        'vue/html-self-closing': 'off',
-        'vue/no-multiple-template-root': 'off',
-        'vue/require-default-prop': 'off',
-        'vue/no-v-model-argument': 'off',
-        'vue/no-arrow-functions-in-watch': 'off',
-        'vue/no-template-key': 'off',
-        'vue/no-v-html': 'off',
-        'vue/comment-directive': 'off',
-        'vue/no-parsing-error': 'off',
-        'vue/no-deprecated-v-on-native-modifier': 'off',
-        'vue/multi-word-component-names': 'off',
-        'no-useless-escape': 'off',
-        'no-sparse-arrays': 'off',
-        'no-prototype-builtins': 'off',
-        'no-constant-condition': 'off',
-        'no-use-before-define': 'off',
-        'no-restricted-globals': 'off',
-        'no-restricted-syntax': 'off',
-        'generator-star-spacing': 'off',
-        'no-unreachable': 'off',
-        'no-multiple-template-root': 'off',
-        'no-unused-vars': 'off',
-        'no-undef': 'off',
-        'no-v-model-argument': 'off',
-        'no-case-declarations': 'off',
-        'no-console': 'error',
-        'no-redeclare': 'off'
-    }
+	overrides: [
+	],
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+	},
+	plugins: ['vue'],
+	rules: {
+		// http://eslint.cn/docs/rules/
+		// https://eslint.vuejs.org/rules/
+		// https://typescript-eslint.io/rules/no-unused-vars/
+		'vue/no-unused-vars': 'off', // 已声明 'xxx'，但从未读取其值
+		'vue/require-prop-type-constructor': 'off', // 要求道具类型为构造函数
+		'vue/multi-word-component-names': 'off', // 要求组件名称总是多字的
+		'vue/no-mutating-props': 'off', // 禁止组件道具的变异，如不准使用 form 当做对象名称
+		'no-unused-vars': 'error', // 禁止使用未使用的变量
+		'no-undef': 'off', // template 中禁止使用未声明的变量，除非在/*global */ comments中提到
+		'no-prototype-builtins': 'off', // 禁止调用某个对象。原型方法直接在对象上
+		'no-useless-escape': 'off', // 禁止使用不必要的转义字符
+		'no-case-declarations': 'off', // 禁止在 case 子句中使用词法声明
+		'no-empty': 'off', // 禁止使用空块语句
+		'no-sparse-arrays': 'off', // 禁止使用稀疏数组
+	},
 }
 ```
 
@@ -130,6 +108,8 @@ module.exports = {
 	},
 }
 ```
+
+- 新建 .eslintignore 文件用作忽略 eslint
 
 - 执行 lint 命令
 ```
@@ -270,6 +250,7 @@ pnpm add stylelint stylelint-config-standard stylelint-config-standard-scss styl
 ```
 stylelint: css 样式 lint 工具
 stylelint-config-standard: Stylelint 的标准可共享配置规则，详细可查看官方文档
+stylelint-config-prettier: 关闭所有不必要或可能与Prettier冲突的规则
 stylelint-config-standard-scss: .scss 文件的样式配置
 stylelint-config-standard-vue: lint.vue 文件的样式配置
 stylelint-order: 指定样式书写的顺序，在.stylelintrc.cjs中 order/properties-order 指定顺序
@@ -280,107 +261,112 @@ stylelint-scss: stylelint-config-standard-scss 的依赖，sass 的 stylelint �
 - 添加 .stylelintrc.cjs 配置文件
 ``` js
 module.exports = {
-    extends: [
-        "stylelint-config-standard",
-        "stylelint-config-standard-scss",
-        "stylelint-config-standard-vue/scss",
-    ],
-    plugins: ['stylelint-scss', 'stylelint-order'],
-    rules: {
-        'no-empty-source': null, // 禁止 style 标签内容为空
-        'no-descending-specificity': null, // 禁止低特异性选择符出现在覆盖高特异性选择符之后
-        'max-line-length': null, // 限制一行的长度
-        'selector-class-pattern': null, // 为类选择器指定一个模式
-        'value-no-vendor-prefix': null, // 禁止在值中使用供应商前缀
-        "indentation": null, // 禁止格式化缩进
-        'number-max-precision': null, // 限制数字中允许的小数点后数位
-        'keyframes-name-pattern': null, // 期望关键帧名称为串格式 .foo-bar
-        'block-no-empty': null, // 禁止使用空样式
-        "no-duplicate-selectors": null, // 禁止重复选择器
-        "at-rule-no-unknown": null, // 禁止使用未知at规则
-        "property-no-unknown": null, // 禁止使用未知属性
-        "font-family-no-missing-generic-family-keyword": null, // 禁止字体族中缺少通用族关键字
-        "scss/double-slash-comment-empty-line-before": null,
-        "scss/no-global-function-names": null,
-        "scss/at-rule-no-unknown": null,
+	extends: ['stylelint-config-standard', 'stylelint-config-standard-scss', 'stylelint-config-standard-vue/scss'],
+	plugins: ['stylelint-scss', 'stylelint-order'],
+	customSyntax: 'postcss-html',
+	rules: {
+		// https://stylelint.bootcss.com/user-guide/rules/list
+		// https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules
+		'no-empty-source': null, // 禁止 style 标签内容为空
+		'no-descending-specificity': null, // 禁止低特异性选择符出现在覆盖高特异性选择符之后
+		'no-duplicate-selectors': null, // 禁止重复选择器
+		'declaration-block-trailing-semicolon': 'never', // 要求或禁止在声明块中使用尾随分号
+		'declaration-block-no-redundant-longhand-properties': null, // 禁止可以组合为一个简略属性的手动属性
+		'max-line-length': null, // 限制一行的长度
+		'selector-class-pattern': null, // 为类选择器指定一个模式
+		'value-no-vendor-prefix': null, // 禁止在值中使用供应商前缀
+		'indentation': null, // 禁止格式化缩进
+		'number-max-precision': null, // 限制数字中允许的小数点后数位
+		'keyframes-name-pattern': null, // 期望关键帧名称为串格式 .foo-bar
+		'block-no-empty': null, // 禁止使用空样式
+		'at-rule-no-unknown': null, // 禁止使用未知at规则
+		'property-no-unknown': null, // 禁止使用未知属性
+		'string-quotes': null, // 在字符串周围指定单引号或双引号,注释中的引用将被忽略
+		'font-family-no-missing-generic-family-keyword': null, // 禁止字体族中缺少通用族关键字
+		'scss/double-slash-comment-empty-line-before': null, // 要求或禁止在//-comments前出现空行
+		'scss/no-global-function-names': null, // 禁止使用全局函数名，因为这些全局函数现在位于内置的Sass模块中
+		'scss/at-rule-no-unknown': null, // 禁止使用未知at规则。应该用来代替stylelint的at-rule-no-unknown
+		'scss/at-mixin-pattern': null, // mixin 名称为串格式 .foo-bar
 
-        // 指定样式的排序
-        'order/properties-order': [
-            'position',
-            'top',
-            'right',
-            'bottom',
-            'left',
-            'z-index',
-            'display',
-            'justify-content',
-            'align-items',
-            'float',
-            'clear',
-            'overflow',
-            'overflow-x',
-            'overflow-y',
-            'padding',
-            'padding-top',
-            'padding-right',
-            'padding-bottom',
-            'padding-left',
-            'margin',
-            'margin-top',
-            'margin-right',
-            'margin-bottom',
-            'margin-left',
-            'width',
-            'min-width',
-            'max-width',
-            'height',
-            'min-height',
-            'max-height',
-            'font-size',
-            'font-family',
-            'text-align',
-            'text-justify',
-            'text-indent',
-            'text-overflow',
-            'text-decoration',
-            'white-space',
-            'color',
-            'background',
-            'background-position',
-            'background-repeat',
-            'background-size',
-            'background-color',
-            'background-clip',
-            'border',
-            'border-style',
-            'border-width',
-            'border-color',
-            'border-top-style',
-            'border-top-width',
-            'border-top-color',
-            'border-right-style',
-            'border-right-width',
-            'border-right-color',
-            'border-bottom-style',
-            'border-bottom-width',
-            'border-bottom-color',
-            'border-left-style',
-            'border-left-width',
-            'border-left-color',
-            'border-radius',
-            'opacity',
-            'filter',
-            'list-style',
-            'outline',
-            'visibility',
-            'box-shadow',
-            'text-shadow',
-            'resize',
-            'transition'
-        ]
-    }
+		// 指定样式的排序
+		'order/properties-order': [
+			'position',
+			'top',
+			'right',
+			'bottom',
+			'left',
+			'z-index',
+			'display',
+			'justify-content',
+			'align-items',
+			'float',
+			'clear',
+			'overflow',
+			'overflow-x',
+			'overflow-y',
+			'padding',
+			'padding-top',
+			'padding-right',
+			'padding-bottom',
+			'padding-left',
+			'margin',
+			'margin-top',
+			'margin-right',
+			'margin-bottom',
+			'margin-left',
+			'width',
+			'min-width',
+			'max-width',
+			'height',
+			'min-height',
+			'max-height',
+			'font-size',
+			'font-family',
+			'text-align',
+			'text-justify',
+			'text-indent',
+			'text-overflow',
+			'text-decoration',
+			'white-space',
+			'color',
+			'background',
+			'background-position',
+			'background-repeat',
+			'background-size',
+			'background-color',
+			'background-clip',
+			'border',
+			'border-style',
+			'border-width',
+			'border-color',
+			'border-top-style',
+			'border-top-width',
+			'border-top-color',
+			'border-right-style',
+			'border-right-width',
+			'border-right-color',
+			'border-bottom-style',
+			'border-bottom-width',
+			'border-bottom-color',
+			'border-left-style',
+			'border-left-width',
+			'border-left-color',
+			'border-radius',
+			'opacity',
+			'filter',
+			'list-style',
+			'outline',
+			'visibility',
+			'box-shadow',
+			'text-shadow',
+			'resize',
+			'transition',
+		],
+	},
 }
 ```
+
+- 新建 .stylelintignore 忽略文件
 
 - 在 package.json 中的 script 中添加以下命令
 ``` js
@@ -511,4 +497,32 @@ pnpm add lint-staged -D
 
 # 格式化并提交代码
 pnpm run lint:lint-staged
+```
+
+## 使用 @antfu/eslint-config 替换 prettier
+
+- [为什么我不使用 Prettier](https://antfu.me/posts/why-not-prettier-zh)
+
+- 安装
+```
+pnpm add @antfu/eslint-config -D
+```
+
+- .eslintrc.cjs
+``` js
+{
+  	"extends": "@antfu"
+}
+```
+
+- 配置 VScode 代码自动修复
+
+``` js
+{
+	"prettier.enable": false,
+	"editor.formatOnSave": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
+}
 ```
