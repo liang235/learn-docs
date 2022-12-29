@@ -1,20 +1,20 @@
 # stylelint
 `stylelint v13` 版本将 css, parse CSS(如SCSS,SASS),html 内的 css(如*.vue中的style)等编译工具都包含在内。但是 v14 版本没有包含在内，所以需要安装需要的工具
 
-
+- [sass](): 
 - [stylelint](https://github.com/stylelint/stylelint): 检验 css 样式的格式、风格
 - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard): Stylelint的 标准可共享配置
 - [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss): Stylelint 的标准可共享 SCSS 配置
 - [stylelint-config-standard-vue](https://github.com/ota-meshi/stylelint-config-standard-vue): Stylelint 的标准共享 Vue 配置
-- [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): 关闭所有不必要的或可能与 pretty 冲突的规则
-- [postcss-html](https://github.com/gucong3000/postcss-html): 用于解析 HTML(和类HTML)的 PostCSS 语法
 - [stylelint-scss](https://github.com/stylelint-scss/stylelint-scss): 用于 Stylelint 的 SCSS 特定检测规则的集合(以插件的形式)
 - [stylelint-order](https://github.com/hudochenkov/stylelint-order): css 属性排序规则
+- [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): 关闭所有不必要的或可能与 pretty 冲突的规则
+- [postcss-html](https://github.com/gucong3000/postcss-html): 用于解析 HTML(和类HTML)的 PostCSS 语法
 - [vite-plugin-stylelint](https://github.com/ModyQyW/vite-plugin-stylelint): 在终端打印出错误信息
 
 ## 安装
 ```
-pnpm add -D stylelint stylelint-config-standard stylelint-config-standard-scss stylelint-config-standard-vue stylelint-config-prettier postcss-html stylelint-scss
+pnpm add -D sass stylelint stylelint-config-standard stylelint-config-standard-scss stylelint-config-standard-vue stylelint-scss stylelint-order stylelint-config-prettier postcss-html vite-plugin-stylelint
 ```
 
 - 在根目录下新建 `.stylelintrc.cjs` 配置文件

@@ -7,6 +7,9 @@
 - [stylelint](https://github.com/stylelint/stylelint): 检验 css 样式的格式、风格
 - [husky](https://github.com/typicode/husky): 用来管理 git hook 的工具
 - [lint-staged](https://github.com/okonet/lint-staged): 对 git 暂存的文件进行 lint 检查
+- [vite-plugin-svg-icons](https://github.com/vbenjs/vite-plugin-svg-icons): svg 图标使用
+- [tailwindcss](https://tailwindcss.com/docs/guides/vite#vue): 功能类优先的 CSS 框架
+- [autoprefixer](https://github.com/postcss/autoprefixer): 自动添加 css 前缀
 
 ## 初始化项目
 ```

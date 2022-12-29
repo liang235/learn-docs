@@ -1,17 +1,16 @@
 # Eslint
 - [eslint](https://zh-hans.eslint.org/docs/latest/user-guide/getting-started): 可以保证项目的质量
+- [eslint-plugin-vue](https://eslint.vuejs.org/user-guide/): Vue.js 官方 ESLint 插件
+- `eslint-config-airbnb-base`: 现在最火的 ESLint 规则
+- `eslint-plugin-import`: eslint-config-airbnb-base 的前置插件
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): 关闭所有不必要的或可能与pretty冲突的规则
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier): 作为 ESLin t规则运行 pretty，并报告不同的 ESLint 问题
-- [eslint-plugin-vue](https://eslint.vuejs.org/user-guide/): Vue.js 官方 ESLint 插件
 - [vite-plugin-eslint](https://github.com/gxmari007/vite-plugin-eslint): 在终端打印出错误信息
 
 ## 安装
 ```
-pnpm add -D eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-prettier vite-plugin-eslint
+pnpm add -D eslint eslint-plugin-vue eslint-config-airbnb-base eslint-plugin-import eslint-config-prettier eslint-plugin-prettier vite-plugin-eslint
 ```
-
-- `eslint-config-airbnb-base`: 现在最火的 ESLint 规则
-- `eslint-plugin-import`: eslint-config-airbnb-base 的前置插件
 
 ## 初始化 eslint
 ```
@@ -33,7 +32,7 @@ pnpm eslint --init
 选择：Yes
 
 (5) Where does your code run?
-选择：Browser
+选择：Node
 
 (6) What format do you want your config file to be in?
 选择：JavaScript
@@ -55,8 +54,8 @@ module.exports = {
 		node: true,
 	},
 	extends: [
-		'eslint:recommended',
 		'plugin:vue/vue3-essential',
+		'eslint-config-airbnb-base',
 		// eslint-config-prettier 与 eslint-config-prettier 简写配置
 		'plugin:prettier/recommended'
 	],
