@@ -13,7 +13,7 @@ npx tailwindcss init -p
 ## 这三个出了问题之后再补装即可
 - [postcss](https://github.com/postcss/postcss/blob/main/docs/README-cn.md): 一个允许使用 JS 插件转换样式的工具。 这些插件可以检查（lint）你的 CSS，支持 CSS Variables 和 Mixins， 编译尚未被浏览器广泛支持的先进的 CSS 语法，内联图片，以及其它很多优秀的功能，vite 内置了该插件，是否安装都可以
 - [postcss-import](https://github.com/postcss/postcss-import): 插件通过内联内容转换 @import 规则
-- [postcss-nesting](): 允许你按照 CSS 嵌套规范将样式规则嵌套在一起。如果你想要嵌套规则与 Sass 的工作方式相同，你可能想要使用
+- [postcss-nesting](https://www.npmjs.com/package/postcss-nesting): 允许你按照 CSS 嵌套规范将样式规则嵌套在一起。如果你想要嵌套规则与 Sass 的工作方式相同，你可能想要使用
 
 ## 配置 tailwind.config.cjs
 ``` js

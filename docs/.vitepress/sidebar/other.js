@@ -27,6 +27,8 @@ export default [
 			{ text: '兼容 IE', link: `${projectPath}/compat-ie.md` },
 			{ text: '自动部署', link: `${projectPath}/deploy-sync.md` },
 			{ text: 'config 配置', link: `${projectPath}/config.md` },
+			{ text: 'npm-run-all', link: `${projectPath}/npm-run-all.md` },
+			{ text: 'mitt 事件总线', link: `${projectPath}/mitt.md` },
 		],
 	},
 	{
