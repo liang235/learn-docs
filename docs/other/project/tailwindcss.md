@@ -21,7 +21,7 @@ npx tailwindcss init -p
 module.exports = {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	corePlugins: {
-		preflight: false, // 把 css 默认样式给屏蔽掉，使用 tailwindcss 的默认样式
+		preflight: false, // 这个预设类似于css样式初始化
 	},
 	theme: {
 		extend: {
