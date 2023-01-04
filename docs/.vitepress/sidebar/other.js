@@ -38,6 +38,7 @@ export default [
 		items: [
 			{ text: 'npm', link: `${commonPath}/npm.md` },
 			{ text: 'iterm', link: `${commonPath}/iterm.md` },
+			{ text: 'eclipse', link: `${commonPath}/eclipse.md` },
 		],
 	},
 ]

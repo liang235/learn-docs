@@ -1,5 +1,38 @@
 # 操作符
 
+## ! 取反操作符
+- 将对象转为布尔型并取反
+- 对于布尔类型会将其值 `true` 和 `false` 互换
+- 对于非布尔类型，`js` 会将值先转换成布尔类型，而后取反
+    - 字符串类型: 会将空值（""）转换成 `true`，其余转换成 `false`
+    - 数字类型: 会将 `0` 转换成 `true`，其余为 `false`
+- `null`、`undefined` 会转换成 `true`
+
+``` js
+console.log(!true) // false
+console.log(!false) // true
+console.log(!'') // true
+console.log(!'123') // false
+console.log(!0) // true
+console.log(!1) // false
+console.log(!null) // true
+console.log(!undefined) // true
+```
+
+## !! 双取反操作符
+是将取反后的布尔值再取反，相当于直接将非布尔类型值转为布尔类型值
+
+``` js
+console.log(!!true) // true
+console.log(!!false) // false
+console.log(!!'') // false
+console.log(!!'123') // true
+console.log(!!0) // false
+console.log(!!1) // true
+console.log(!!null) // false
+console.log(!!undefined) // false
+```
+
 ## ?? 空值合并操作符
 只有当操作符左侧值为 `undefined` 或者 `null` 时才会返回操作符右侧的值，否则返回左侧的值，简单来说 `??` 是可以判断左侧有没有值
 
