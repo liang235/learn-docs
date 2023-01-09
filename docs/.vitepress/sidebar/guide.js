@@ -32,14 +32,13 @@ export default [
 		items: [
 			{ text: '权限', link: `${commonPath}/permission.md` },
 			{ text: '页面缓存', link: `${commonPath}/keep-alive.md` },
+			{ text: '高级 position:fixed', link: `${commonPath}/position-fixed.md` },
 		],
 	},
 	{
 		text: '其他',
 		collapsible: true, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
-		items: [
-			{ text: '常见问题', link: `${commonPath}/q-a.md` },
-		],
+		items: [{ text: '常见问题', link: `${commonPath}/q-a.md` }],
 	},
 ]
