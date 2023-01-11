@@ -6,3 +6,10 @@
 ``` js
 ![operator](/operator.jpg)
 ```
+
+## 提示语句
+``` js
+::: warning 注意事项
+// ...
+:::
+```
