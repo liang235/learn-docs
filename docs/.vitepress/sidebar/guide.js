@@ -22,7 +22,6 @@ export default [
 			{ text: '路由（导航）', link: `${commonPath}/router.md` },
 			{ text: '全局资源', link: `${commonPath}/global-resources.md` },
 			{ text: 'SVG 图标', link: `${commonPath}/svg-icon.md` },
-			{ text: 'components 组件', link: `${commonPath}/components.md` },
 		],
 	},
 	{

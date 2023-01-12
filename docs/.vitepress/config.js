@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2022-12-25 16:28:54
+ * @LastEditTime: 2023-01-12 10:18:41
  */
 import { defineConfig } from 'vitepress'
 import guideSidebar from './sidebar/guide.js' // 指南
@@ -13,11 +13,14 @@ import markdownSidebar from './sidebar/markdown.js' // markdown 语法
 import componentsSidebar from './sidebar/components.js' // 组件
 import vueSidebar from './sidebar/vue.js' // Vue
 import javascriptSidebar from './sidebar/javascript.js' // JavaScript
-import javaSidebar from './sidebar/java.js' // JavaScript
+import javaSidebar from './sidebar/java.js' // Java
+import mysqlSidebar from './sidebar/mysql.js' // mysql
 import nodejsSidebar from './sidebar/nodejs.js' // NodeJs
 import elementPlusSidebar from './sidebar/element-plus.js' // Element-plus
 import otherSidebar from './sidebar/other.js' // 其他
 import directorySidebar from './sidebar/directory.js' // 目录结构
+import cssSidebar from './sidebar/css.js' // css
+import createViteSidebar from './sidebar/create-vite.js' // 项目搭建
 
 export default defineConfig({
 	title: '学习文档', // 站点的标题，浏览器 title 部分
@@ -49,10 +52,13 @@ export default defineConfig({
 			'/vue/': vueSidebar,
 			'/javascript/': javascriptSidebar,
 			'/java/': javaSidebar,
+			'/mysql/': mysqlSidebar,
 			'/nodejs/': nodejsSidebar,
 			'/element-plus/': elementPlusSidebar,
 			'/other/': otherSidebar,
 			'/directory/': directorySidebar,
+			'/css/': cssSidebar,
+			'/create-vite/': createViteSidebar,
 		},
 
 		// 右侧 导航链接
@@ -67,6 +73,7 @@ export default defineConfig({
 					{
 						items: [
 							{ text: '准备工作', link: '/guide/ready' },
+							{ text: '项目搭建', link: '/create-vite/create-vite' },
 							{ text: 'components 组件', link: '/components/index' },
 							{ text: 'package.json', link: '/package/index' },
 							{ text: '目录结构', link: '/directory/index' },
@@ -100,8 +107,19 @@ export default defineConfig({
 				link: '/javascript/index',
 			},
 			{
+				text: 'CSS',
+				link: '/css/index',
+			},
+			{
 				text: 'Java',
-				link: '/java/index',
+				items: [
+					{
+						items: [
+							{ text: 'Java 基础', link: '/java/index' },
+							{ text: 'MySQL 数据库', link: '/mysql/index' },
+						],
+					},
+				],
 			},
 			{
 				text: 'NodeJs',
