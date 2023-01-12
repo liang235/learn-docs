@@ -39,7 +39,7 @@ css: {
 
 ## 组件
 
-### 公共组件 [components 组件](./components.md)
+### 公共组件 [components 组件](../components/index.md)
 ::: tip 提示
 公共组件在使用时，无需手动引入，框架会在你使用时自动引入，该特性由 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 提供支持
 :::
