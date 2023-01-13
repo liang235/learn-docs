@@ -3,7 +3,22 @@ Arrays 工具类：用来操作数组（比如排序和搜索）的各种方法
 
 ## 使用方式
 ``` java
+package com.dj.java;
 
+import java.util.Arrays; // 导入 Arrays 工具类
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		int[] arr = {21,12,33,25,15};
+		Arrays.sort(arr); // 数组排序
+        String str = Arrays.toString(arr); // 转为字符串
+		System.out.println(str);
+
+		// 二分查找,必须在有序的场景下使用
+		int index = Arrays.binarySearch(arr, 33);
+		System.out.println(index);
+	}
+}
 ```
 
 ## 常用方法

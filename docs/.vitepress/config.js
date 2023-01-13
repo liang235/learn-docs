@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-01-12 10:18:41
+ * @LastEditTime: 2023-01-13 09:52:30
  */
 import { defineConfig } from 'vitepress'
 import guideSidebar from './sidebar/guide.js' // 指南
@@ -115,7 +115,7 @@ export default defineConfig({
 				items: [
 					{
 						items: [
-							{ text: 'Java 基础', link: '/java/index' },
+							{ text: 'Java', link: '/java/index' },
 							{ text: 'MySQL 数据库', link: '/mysql/index' },
 						],
 					},

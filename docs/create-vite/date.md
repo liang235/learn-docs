@@ -20,3 +20,20 @@ export function formatAxis(param) {
 	return '夜里好'
 }
 ```
+
+## 日期格式化
+``` js
+import dayjs from 'dayjs' // 日期格式化插件
+
+/**
+ * @description: 日期格式化 - 根据传入的占位符返回格式化后的日期
+ * @param {*} date
+ * @param {*} formatter
+ * @return {*}
+ */
+export const useDateFormat = (date, formatter = 'YYYY-MM-DD') => {
+	if (date) {
+		return dayjs(date).format(formatter)
+	}
+}
+```

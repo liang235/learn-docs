@@ -50,6 +50,8 @@ export default [
 			{ text: 'autoprefixer', link: `${commonPath2}/autoprefixer.md` },
 			{ text: 'sass', link: `${commonPath2}/sass.md` },
 			{ text: 'Windi CSS', link: `${commonPath2}/Windi CSS.md` },
+			{ text: 'stylelint', link: `${commonPath2}/stylelint.md` },
+			{ text: 'eslint', link: `${commonPath2}/eslint.md` },
 			{ text: 'Tailwind Css', link: `${commonPath2}/Tailwind Css.md` },
 			{ text: 'unplugin-auto-import', link: `${commonPath2}/unplugin-auto-import.md` },
 			{ text: 'unplugin-vue-components', link: `${commonPath2}/unplugin-vue-components.md` },
@@ -61,8 +63,7 @@ export default [
 			{ text: 'vite-plugin-style-import', link: `${commonPath2}/vite-plugin-style-import.md` },
 			{ text: 'vite-plugin-vue-inspector', link: `${commonPath2}/vite-plugin-vue-inspector.md` },
 			{ text: 'vite-plugin-compression', link: `${commonPath2}/vite-plugin-compression.md` },
-			{ text: 'stylelint', link: `${commonPath2}/stylelint.md` },
-			{ text: 'eslint', link: `${commonPath2}/eslint.md` },
+			{ text: 'vite-plugin-theme', link: `${commonPath2}/vite-plugin-theme.md` },
 		],
 	},
 ]
