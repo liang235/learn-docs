@@ -20,6 +20,9 @@ npm install -g npm-check
 // npm 更新全局包
 ncu -u -g
 
+// npm 查看项目中可以更新的包
+ncu
+
 // npm 更新某个项目的包
 ncu -u
 

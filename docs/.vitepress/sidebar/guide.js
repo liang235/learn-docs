@@ -32,6 +32,7 @@ export default [
 			{ text: '权限', link: `${commonPath}/permission.md` },
 			{ text: '页面缓存', link: `${commonPath}/keep-alive.md` },
 			{ text: '高级 position:fixed', link: `${commonPath}/position-fixed.md` },
+			{ text: 'tools 工具库', link: `${commonPath}/tools.md` },
 		],
 	},
 	{
