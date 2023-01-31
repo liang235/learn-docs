@@ -1,13 +1,21 @@
 # 字符串
 
-## [startsWith](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+## [split](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split) 字符串转数组
+- split() 方法使用指定的分隔符字符串将一个 String 对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置
+``` js
+const arr = '1, 2, 3, 4, 5, 6, 7, 8, 9'
+console.log(arr.split(','))
+// ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+```
+
+## [startsWith](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) 是否以指定字符串开头
 startsWith() 方法用于返回一个字符串是否在指定字符串中的开头位置，是则返回true，否则返回false
 ``` js
 const str = 'Hello World'
 console.log(str.startsWith('Hello')) // true
 ```
 
-## [endsWith]()
+## [endsWith](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith) 是否以指定字符串结尾
 endsWith() 方法用来判断当前字符串是否是以另外一个给定的子字符串“结尾”的，根据判断结果返回 true 或 false
 ``` js
 const str = 'Cats are the best!'
