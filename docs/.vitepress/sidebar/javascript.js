@@ -14,6 +14,7 @@ export default [
 		items: [
 			{ text: '操作符', link: `${commonPath}/operator.md` },
 			{ text: '字符串', link: `${commonPath}/string.md` },
+			{ text: '对象', link: `${commonPath}/object.md` },
 			{ text: '遍历循环', link: `${commonPath}/traversal.md` },
 		],
 	},

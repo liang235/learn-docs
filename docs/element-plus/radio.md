@@ -1,4 +1,4 @@
-# Radio 单选框 [官网地址](https://element-plus.gitee.io/zh-CN/component/radio.html)
+# [Radio 单选框](https://element-plus.gitee.io/zh-CN/component/radio.html)
 
 ## 同时获取 label 和 id
 ``` vue
