@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-01-13 09:52:30
+ * @LastEditTime: 2023-02-02 18:01:05
  */
 import { defineConfig } from 'vitepress'
 import guideSidebar from './sidebar/guide.js' // 指南
@@ -15,6 +15,7 @@ import vueSidebar from './sidebar/vue.js' // Vue
 import javascriptSidebar from './sidebar/javascript.js' // JavaScript
 import javaSidebar from './sidebar/java.js' // Java
 import mysqlSidebar from './sidebar/mysql.js' // mysql
+import jspSidebar from './sidebar/jsp.js' // mysql
 import nodejsSidebar from './sidebar/nodejs.js' // NodeJs
 import elementPlusSidebar from './sidebar/element-plus.js' // Element-plus
 import otherSidebar from './sidebar/other.js' // 其他
@@ -53,6 +54,7 @@ export default defineConfig({
 			'/javascript/': javascriptSidebar,
 			'/java/': javaSidebar,
 			'/mysql/': mysqlSidebar,
+			'/jsp/': jspSidebar,
 			'/nodejs/': nodejsSidebar,
 			'/element-plus/': elementPlusSidebar,
 			'/other/': otherSidebar,
@@ -86,6 +88,7 @@ export default defineConfig({
 				items: [
 					{
 						items: [
+							{ text: 'element-plus', link: '/element-plus/index' },
 							{ text: 'vueuse', link: '/vueuse/index' },
 							{ text: 'lodash', link: '/lodash/index' },
 							{ text: 'echarts', link: '/echarts/index' },
@@ -97,10 +100,6 @@ export default defineConfig({
 			{
 				text: 'Vue',
 				link: '/vue/index',
-			},
-			{
-				text: 'ElementPlus',
-				link: '/element-plus/index',
 			},
 			{
 				text: 'JavaScript',
@@ -117,6 +116,7 @@ export default defineConfig({
 						items: [
 							{ text: 'Java', link: '/java/index' },
 							{ text: 'MySQL 数据库', link: '/mysql/index' },
+							{ text: 'Jsp', link: '/jsp/index' },
 						],
 					},
 				],
