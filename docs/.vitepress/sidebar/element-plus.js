@@ -8,12 +8,18 @@ export default [
 		items: [{ text: '介绍', link: `${commonPath}/index.md` }],
 	},
 	{
-		text: '组件',
+		text: 'Form 表单组件',
 		collapsible: true, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: 'Cascader 级联选择器', link: `${commonPath}/cascader.md` },
 			{ text: 'Radio 单选框', link: `${commonPath}/radio.md` },
 		],
+	},
+	{
+		text: 'Feedback 反馈组件',
+		collapsible: true, // 是否可折叠的侧边栏组
+		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+		items: [{ text: 'Loading 加载', link: `${commonPath}/loading.md` }],
 	},
 ]
