@@ -64,6 +64,7 @@ export default [
 			{ text: 'vite-plugin-vue-inspector', link: `${commonPath2}/vite-plugin-vue-inspector.md` },
 			{ text: 'vite-plugin-compression', link: `${commonPath2}/vite-plugin-compression.md` },
 			{ text: 'vite-plugin-theme', link: `${commonPath2}/vite-plugin-theme.md` },
+			{ text: 'vite-plugin-remove-console', link: `${commonPath2}/vite-plugin-remove-console.md` },
 		],
 	},
 ]

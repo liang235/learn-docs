@@ -1,5 +1,5 @@
 # pinia-plugin-persist
-数据持久化
+pinia 数据持久化
 
 ## 安装 [官网地址](https://seb-l.github.io/pinia-plugin-persist/#install)
 ```
