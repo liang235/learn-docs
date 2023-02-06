@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-02-06 16:25:38
+ * @LastEditTime: 2023-02-06 17:32:00
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.js' // 侧边栏
@@ -16,7 +16,7 @@ export default defineConfig({
 	head: [['link', { rel: 'icon', href: './vite.svg' }]],
 
 	themeConfig: {
-		siteTitle: '官方文档', // 网站标题，默认情况下，nav 显示站点引用config.title值的标题
+		siteTitle: '学习文档', // 网站标题，默认情况下，nav 显示站点引用config.title值的标题
 		logo: '/vite.svg',
 		outlineTitle: 'On this page', // 标题大纲
 

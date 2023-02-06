@@ -6,7 +6,7 @@
 ### 创建账号登录之后再控制台，或者用户设置中新建应用程序
 ![algolia-1](/algolia-1.jpg)
 
-### 进入应用程序或许 `API KEYS`
+### 进入应用程序 `API KEYS`
 ![algolia-2](/algolia-2.jpg)
 ![algolia-3](/algolia-3.jpg)
 
