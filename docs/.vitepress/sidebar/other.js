@@ -15,6 +15,7 @@ export default [
 			{ text: 'npm', link: `${commonPath}/npm.md` },
 			{ text: 'iterm', link: `${commonPath}/iterm.md` },
 			{ text: 'eclipse', link: `${commonPath}/eclipse.md` },
+			{ text: 'algolia 云搜索', link: `${commonPath}/algolia.md` },
 		],
 	},
 ]

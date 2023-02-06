@@ -1,7 +1,7 @@
 /*
  * @Description: 自定义 CSS
  * @Date: 2022-09-08 17:09:23
- * @LastEditTime: 2022-12-24 00:48:34
+ * @LastEditTime: 2023-02-06 16:05:27
  */
 .container {
 	.main {
@@ -71,7 +71,9 @@
 	content: '专业版';
 }
 
+// md `` 样式
 .vp-doc :not(pre) > code:not(:where(.vp-raw *)) {
-	color: #fff;
-	background-color: var(--vp-c-brand);
+	color: var(--vp-c-brand);
+	font-weight: 700;
+	// background-color: var(--vp-c-brand);
 }

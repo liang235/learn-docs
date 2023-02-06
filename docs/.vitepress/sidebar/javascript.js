@@ -17,6 +17,7 @@ export default [
 			{ text: '对象', link: `${commonPath}/object.md` },
 			{ text: '遍历循环', link: `${commonPath}/traversal.md` },
 			{ text: 'Date 日期', link: `${commonPath}/date.md` },
+			{ text: '特殊字符', link: `${commonPath}/character.md` },
 		],
 	},
 ]

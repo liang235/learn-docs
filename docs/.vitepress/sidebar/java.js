@@ -28,6 +28,7 @@ export default [
 			{ text: '运算符', link: `${basisPath}/index6.md` },
 			{ text: '数组的定义', link: `${basisPath}/index7.md` },
 			{ text: '二维数组', link: `${basisPath}/index8.md` },
+			{ text: '面向对象的思想', link: `${basisPath}/index9.md` },
 		],
 	},
 ]

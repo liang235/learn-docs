@@ -1,27 +1,12 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-02-02 18:01:05
+ * @LastEditTime: 2023-02-06 16:25:38
  */
 import { defineConfig } from 'vitepress'
-import guideSidebar from './sidebar/guide.js' // 指南
-import packageSidebar from './sidebar/package.js' // 安装依赖
-import vueuseSidebar from './sidebar/vueuse.js' // vue 工具库
-import lodashSidebar from './sidebar/lodash.js' // js 工具库
-import echartsSidebar from './sidebar/echarts.js' // echarts 图表
-import markdownSidebar from './sidebar/markdown.js' // markdown 语法
-import componentsSidebar from './sidebar/components.js' // 组件
-import vueSidebar from './sidebar/vue.js' // Vue
-import javascriptSidebar from './sidebar/javascript.js' // JavaScript
-import javaSidebar from './sidebar/java.js' // Java
-import mysqlSidebar from './sidebar/mysql.js' // mysql
-import jspSidebar from './sidebar/jsp.js' // mysql
-import nodejsSidebar from './sidebar/nodejs.js' // NodeJs
-import elementPlusSidebar from './sidebar/element-plus.js' // Element-plus
-import otherSidebar from './sidebar/other.js' // 其他
-import directorySidebar from './sidebar/directory.js' // 目录结构
-import cssSidebar from './sidebar/css.js' // css
-import createViteSidebar from './sidebar/create-vite.js' // 项目搭建
+import sidebar from './sidebar.js' // 侧边栏
+import algolia from './algolia.js' // 搜索查询
+import nav from './nav.js' // 头部导航
 
 export default defineConfig({
 	title: '学习文档', // 站点的标题，浏览器 title 部分
@@ -42,94 +27,10 @@ export default defineConfig({
 		},
 
 		// 多个侧边栏，根据页面路径显示不同的侧边栏
-		sidebar: {
-			'/guide/': guideSidebar,
-			'/package/': packageSidebar,
-			'/vueuse/': vueuseSidebar,
-			'/lodash/': lodashSidebar,
-			'/echarts/': echartsSidebar,
-			'/markdown/': markdownSidebar,
-			'/components/': componentsSidebar,
-			'/vue/': vueSidebar,
-			'/javascript/': javascriptSidebar,
-			'/java/': javaSidebar,
-			'/mysql/': mysqlSidebar,
-			'/jsp/': jspSidebar,
-			'/nodejs/': nodejsSidebar,
-			'/element-plus/': elementPlusSidebar,
-			'/other/': otherSidebar,
-			'/directory/': directorySidebar,
-			'/css/': cssSidebar,
-			'/create-vite/': createViteSidebar,
-		},
+		sidebar,
 
-		// 右侧 导航链接
-		nav: [
-			{
-				text: '首页',
-				link: '/',
-			},
-			{
-				text: '系统',
-				items: [
-					{
-						items: [
-							{ text: '准备工作', link: '/guide/ready' },
-							{ text: '项目搭建', link: '/create-vite/create-vite' },
-							{ text: 'components 组件', link: '/components/index' },
-							{ text: 'package.json', link: '/package/index' },
-							{ text: '目录结构', link: '/directory/index' },
-						],
-					},
-				],
-			},
-			{
-				text: '生态',
-				items: [
-					{
-						items: [
-							{ text: 'element-plus', link: '/element-plus/index' },
-							{ text: 'vueuse', link: '/vueuse/index' },
-							{ text: 'lodash', link: '/lodash/index' },
-							{ text: 'echarts', link: '/echarts/index' },
-							{ text: 'markdown', link: '/markdown/index' },
-						],
-					},
-				],
-			},
-			{
-				text: 'Vue',
-				link: '/vue/index',
-			},
-			{
-				text: 'JavaScript',
-				link: '/javascript/index',
-			},
-			{
-				text: 'CSS',
-				link: '/css/index',
-			},
-			{
-				text: 'Java',
-				items: [
-					{
-						items: [
-							{ text: 'Java', link: '/java/index' },
-							{ text: 'MySQL 数据库', link: '/mysql/index' },
-							{ text: 'Jsp', link: '/jsp/index' },
-						],
-					},
-				],
-			},
-			{
-				text: 'NodeJs',
-				link: '/nodejs/index',
-			},
-			{
-				text: '其他',
-				link: '/other/index',
-			},
-		],
+		// 头部导航
+		nav,
 
 		// 当用户为时，该链接变为活动状态
 		socialLinks: [{ icon: 'github', link: 'https://gitee.com/cdl235/docs' }],
@@ -138,6 +39,9 @@ export default defineConfig({
 			message: '根据MIT许可证发布',
 			copyright: 'Copyright © 2022-present feiye',
 		},
+
+		// 搜索查询
+		algolia,
 	},
 
 	markdown: {
