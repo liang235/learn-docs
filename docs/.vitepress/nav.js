@@ -1,7 +1,7 @@
 /*
  * @Description: 头部导航
  * @Date: 2023-02-06 16:24:50
- * @LastEditTime: 2023-02-06 16:24:57
+ * @LastEditTime: 2023-02-10 16:21:55
  */
 export default [
 	{
@@ -43,6 +43,10 @@ export default [
 	{
 		text: 'JavaScript',
 		link: '/javascript/index',
+	},
+	{
+		text: 'TypeScript',
+		link: 'https://ts.xcatliu.com/',
 	},
 	{
 		text: 'CSS',

@@ -1,12 +1,12 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-02-06 17:32:00
+ * @LastEditTime: 2023-02-07 11:35:52
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.js' // 侧边栏
-import algolia from './algolia.js' // 搜索查询
 import nav from './nav.js' // 头部导航
+import algolia from './algolia.js' // 搜索查询
 
 export default defineConfig({
 	title: '学习文档', // 站点的标题，浏览器 title 部分
@@ -33,7 +33,7 @@ export default defineConfig({
 		nav,
 
 		// 当用户为时，该链接变为活动状态
-		socialLinks: [{ icon: 'github', link: 'https://gitee.com/cdl235/docs' }],
+		socialLinks: [{ icon: 'github', link: 'https://github.com/liang235/learn-docs' }],
 
 		footer: {
 			message: '根据MIT许可证发布',
