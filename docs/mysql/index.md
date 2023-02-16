@@ -8,4 +8,4 @@ MySQL 是目前最为流行的开放源码的数据库，是完全网络化的�
 ## 安装 MySQL 可视化工具 Workbench
 - [官网下载安装](https://dev.mysql.com/downloads/workbench/)
 - [安装详情参考](https://blog.csdn.net/unauna9739/article/details/124702155)
-- [安装汉化](https://www.xrvps.com/50691.html)
+- [安装汉化](https://github.com/pifeifei/mysql-workbench-zh-cn)

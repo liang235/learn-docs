@@ -21,6 +21,7 @@ export default [
 		collapsible: true, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
+			{ text: '权限修饰符', link: `${keyWordPath}/permission.md` },
 			{ text: 'this', link: `${keyWordPath}/this.md` },
 			{ text: 'super', link: `${keyWordPath}/super.md` },
 			{ text: 'final', link: `${keyWordPath}/final.md` },
@@ -43,6 +44,9 @@ export default [
 			{ text: '继承', link: `${basisPath}/index10.md` },
 			{ text: '方法的重写', link: `${basisPath}/index11.md` },
 			{ text: '多态', link: `${basisPath}/index12.md` },
+			{ text: '抽象类', link: `${basisPath}/index13.md` },
+			{ text: '接口', link: `${basisPath}/index14.md` },
+			{ text: 'Object 类', link: `${basisPath}/index15.md` },
 		],
 	},
 ]
