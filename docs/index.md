@@ -15,9 +15,6 @@ hero:
         - theme: brand
           text: 开始学习 →
           link: /guide/ready
-        - theme: alt
-          text: 为什么选我们 ?
-          link: /guide/intro
 
 features:
 - icon: 💪
