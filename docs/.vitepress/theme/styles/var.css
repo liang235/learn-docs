@@ -110,3 +110,9 @@
 .pro-badge:before {
 	content: '专业版';
 }
+
+/* md `` 样式 */
+.vp-doc :not(pre) > code:not(:where(.vp-raw *)) {
+	color: var(--vp-c-brand);
+	font-weight: 700;
+}

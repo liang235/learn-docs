@@ -50,3 +50,8 @@
 - `数据库管理系统（Database Management System，简称 DBMS）`：是位于用户与操作系统之间的一层数据管理软件
 - `数据库管理员（Database Administrator，简称 DBA）`：负责数据库创建、使用、维护的专门人员
 - `数据库系统（Database System，简称 DBS）`：数据库系统管理员、数据库管理系统及数据库系统组成的整个单元
+
+## MySQL 管理工具
+- 当完成数据库安装之后，MySQL 是以服务的形式运行在 windows/linux 系统，用户是通过 DBMS 工具对 MySQL 进行操作的，当我们安装完成 MySQL 之后默认安装了 `MySQL Commcand Line Client` 此工具是一个命令行形式的工具，通常我们会单独安装可视化的 DBMS 工具
+    - SQLyog
+    - Navicat
