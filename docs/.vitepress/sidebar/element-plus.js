@@ -18,6 +18,12 @@ export default [
 		],
 	},
 	{
+		text: 'Data 数据展示',
+		collapsible: true, // 是否可折叠的侧边栏组
+		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+		items: [{ text: 'Skeleton 骨架屏', link: `${commonPath}/skeleton.md` }],
+	},
+	{
 		text: 'Feedback 反馈组件',
 		collapsible: true, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏

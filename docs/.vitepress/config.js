@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-02-07 11:35:52
+ * @LastEditTime: 2023-02-28 17:05:22
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.js' // 侧边栏
@@ -18,7 +18,6 @@ export default defineConfig({
 	themeConfig: {
 		siteTitle: '学习文档', // 网站标题，默认情况下，nav 显示站点引用config.title值的标题
 		logo: '/vite.svg',
-		outlineTitle: 'On this page', // 标题大纲
 
 		// 可用于自定义出现在上一个和下一个链接上方的文本
 		docFooter: {
@@ -32,13 +31,18 @@ export default defineConfig({
 		// 头部导航
 		nav,
 
-		// 当用户为时，该链接变为活动状态
+		// https://vitepress.vuejs.org/config/theme-config#sociallinks
 		socialLinks: [{ icon: 'github', link: 'https://github.com/liang235/learn-docs' }],
 
 		footer: {
 			message: '根据MIT许可证发布',
 			copyright: 'Copyright © 2022-present feiye',
 		},
+
+		outlineTitle: 'On this page', // 标题大纲
+
+		// 大纲显示级别：https://vitepress.vuejs.org/config/theme-config#outline
+		outline: 'deep',
 
 		// 搜索查询
 		algolia,

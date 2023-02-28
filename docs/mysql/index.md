@@ -5,6 +5,8 @@ MySQL 是目前最为流行的开放源码的数据库，是完全网络化的�
 - [官网下载安装](https://dev.mysql.com/downloads/mysql/)
 - [安装详情参考](https://blog.csdn.net/m0_67400973/article/details/126034807)
 
+## 安装 MySQL 可视化工具 Navicat
+
 ## 安装 MySQL 可视化工具 Workbench
 - [官网下载安装](https://dev.mysql.com/downloads/workbench/)
 - [安装详情参考](https://blog.csdn.net/unauna9739/article/details/124702155)
