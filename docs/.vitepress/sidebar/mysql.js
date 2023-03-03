@@ -33,6 +33,8 @@ export default [
 			{ text: '连接查询', link: `${commonPath}/join-query.md` },
 			{ text: '存储过程(函数)', link: `${commonPath}/stored-procedure.md` },
 			{ text: '触发器', link: `${commonPath}/flip-flop.md` },
+			{ text: '视图', link: `${commonPath}/sql-view.md` },
+			{ text: '索引', link: `${commonPath}/sql-index.md` },
 		],
 	},
 	{
