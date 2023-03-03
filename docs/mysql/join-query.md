@@ -75,7 +75,7 @@ select * from students inner join classes ON students.cid = classes.class_id;
 ::: tip
 显示左表中的所有数据，如果在右表中存在与左表记录满足匹配条件的数据，则进行匹配；如果右表中不存在匹配数据，则显示未 null
 :::
-![join-query-1](/join-query-1.jpg)
+<zoom-img src="/join-query-1.jpg" />
 
 ### 语法
 ``` sql
@@ -86,7 +86,7 @@ select * from <leftTable> left join <rightTable> ON students.cid = classes.class
 ::: tip
 显示右表中的所有数据，如果在左表中存在与右表记录满足匹配条件的数据，则进行匹配；如果左表中不存在匹配数据，则显示未 null
 :::
-![join-query-2](/join-query-2.jpg)
+<zoom-img src="/join-query-2.jpg" />
 
 ### 语法
 ``` sql

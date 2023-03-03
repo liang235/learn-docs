@@ -1,7 +1,7 @@
 /*
  * @Description: 头部导航
  * @Date: 2023-02-06 16:24:50
- * @LastEditTime: 2023-02-10 16:21:55
+ * @LastEditTime: 2023-03-02 14:20:34
  */
 export default [
 	{
@@ -59,7 +59,7 @@ export default [
 				items: [
 					{ text: 'Java', link: '/java/index' },
 					{ text: 'MySQL 数据库', link: '/mysql/index' },
-					{ text: 'Jsp', link: '/jsp/index' },
+					{ text: 'JSP 开发', link: '/jsp/index' },
 				],
 			},
 		],

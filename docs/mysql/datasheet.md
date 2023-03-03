@@ -14,7 +14,7 @@ create table <tableName>(
     stu_qq varchar(11) not null unique
 );
 ```
-![sql-table-1](/sql-table-1.jpg)
+<zoom-img src="/sql-table-1.jpg" />
 
 ## 查询数据表
 ``` sql

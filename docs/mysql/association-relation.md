@@ -1,6 +1,6 @@
 # 数据表的关联关系
 MySQL 是一个关系型数据库，不仅可以存储数据，还可以维护数据与数据之间的关系 -- 通过在数据表中添加字段建立外键约束
-![association-relation](/association-relation.jpg)
+<zoom-img src="/association-relation.jpg" />
 
 ## 一对一关联
 ::: tip
@@ -8,10 +8,10 @@ MySQL 是一个关系型数据库，不仅可以存储数据，还可以维护�
 :::
 
 ### 方案一：主键关联 -- 两张数据表中主键相同的数据为相互对应的数据
-![association-relation-1](/association-relation-1.jpg)
+<zoom-img src="/association-relation-1.jpg" />
 
 ### 方案二：唯一外键 -- 在任意一张表中添加一个字段设置为外键约束与另一张表主键关联，并且将外键列添加唯一约束
-![association-relation-2](/association-relation-2.jpg)
+<zoom-img src="/association-relation-2.jpg" />
 
 ## 一对多与多对一关联
 ::: tip
@@ -20,7 +20,7 @@ MySQL 是一个关系型数据库，不仅可以存储数据，还可以维护�
 :::
 
 ### 方法：在多的一端添加外键，与一的一端主键进行关联
-![association-relation-3](/association-relation-3.jpg)
+<zoom-img src="/association-relation-3.jpg" />
 
 ## 多对多关联
 ::: tip
@@ -29,4 +29,4 @@ MySQL 是一个关系型数据库，不仅可以存储数据，还可以维护�
 :::
 
 ### 方法：额外创建一张关系表来维护多对多关联
-![association-relation-4](/association-relation-4.jpg)
+<zoom-img src="/association-relation-4.jpg" />

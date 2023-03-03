@@ -31,6 +31,14 @@ export default [
 			{ text: '分组查询', link: `${commonPath}/grouping-query.md` },
 			{ text: '数据表的关联关系', link: `${commonPath}/association-relation.md` },
 			{ text: '连接查询', link: `${commonPath}/join-query.md` },
+			{ text: '存储过程(函数)', link: `${commonPath}/stored-procedure.md` },
+			{ text: '触发器', link: `${commonPath}/flip-flop.md` },
 		],
+	},
+	{
+		text: 'MySQL 优化',
+		collapsible: false, // 是否可折叠的侧边栏组
+		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+		items: [],
 	},
 ]
