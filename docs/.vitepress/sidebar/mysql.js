@@ -12,7 +12,7 @@ export default [
 		],
 	},
 	{
-		text: '基础知识',
+		text: 'MySQL 基础',
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
@@ -35,10 +35,12 @@ export default [
 			{ text: '触发器', link: `${commonPath}/flip-flop.md` },
 			{ text: '视图', link: `${commonPath}/sql-view.md` },
 			{ text: '索引', link: `${commonPath}/sql-index.md` },
+			{ text: '事务', link: `${commonPath}/transaction.md` },
+			{ text: '数据库设计', link: `${commonPath}/database-design.md` },
 		],
 	},
 	{
-		text: 'MySQL 优化',
+		text: 'MySQL 进阶',
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [],
