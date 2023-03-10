@@ -49,3 +49,11 @@
 ### 第三范式
 - 不存在非关键字字段之间的传递依赖
 <zoom-img src="/database-design-3.jpg" />
+
+### 绘制 E-R 图
+<zoom-img src="/database-design-4.jpg" />
+
+### 数据库建模 PDMan
+
+### 三线图
+统一数据实体的表结构
