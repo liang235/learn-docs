@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.87b1f767.js";const A=JSON.parse('{"title":"onClickOutside","description":"","frontmatter":{},"headers":[],"relativePath":"vueuse/sensors/onClickOutside.md"}'),p={name:"vueuse/sensors/onClickOutside.md"},e=l("",3),o=[e];function t(c,r,i,D,y,F){return a(),n("div",null,o)}const u=s(p,[["render",t]]);export{A as __pageData,u as default};

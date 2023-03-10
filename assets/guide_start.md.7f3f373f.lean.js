@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as e}from"./app.87b1f767.js";const b=JSON.parse('{"title":"开始","description":"","frontmatter":{},"headers":[],"relativePath":"guide/start.md"}'),p={name:"guide/start.md"},l=e("",4),r=[l];function t(c,i,o,d,_,m){return a(),n("div",null,r)}const C=s(p,[["render",t]]);export{b as __pageData,C as default};

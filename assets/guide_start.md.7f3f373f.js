@@ -1,0 +1,7 @@
+import{_ as s,c as n,o as a,a as e}from"./app.87b1f767.js";const b=JSON.parse('{"title":"开始","description":"","frontmatter":{},"headers":[],"relativePath":"guide/start.md"}'),p={name:"guide/start.md"},l=e(`<h1 id="开始" tabindex="-1">开始 <a class="header-anchor" href="#开始" aria-hidden="true">#</a></h1><p>做好准备工作后，请在项目根目录下依次执行以下命令</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;"># 安装依赖</span></span>
+<span class="line"><span style="color:#A6ACCD;"># 注意，必须使用 pnpm 安装依赖，请勿使用 npm 或 yarn 安装依赖</span></span>
+<span class="line"><span style="color:#A6ACCD;">pnpm install</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 运行</span></span>
+<span class="line"><span style="color:#A6ACCD;">pnpm run dev</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>运行成功后，会自动访问页面，默认情况下，地址为</p>`,4),r=[l];function t(c,i,o,d,_,m){return a(),n("div",null,r)}const C=s(p,[["render",t]]);export{b as __pageData,C as default};

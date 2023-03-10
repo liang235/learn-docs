@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as r}from"./app.87b1f767.js";const x=JSON.parse('{"title":"特殊字符","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/character.md"}'),c={name:"javascript/character.md"},s=r("",2),n=[s];function _(d,o,i,l,h,p){return a(),e("div",null,n)}const m=t(c,[["render",_]]);export{x as __pageData,m as default};

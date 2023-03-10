@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as e,a as n}from"./app.87b1f767.js";const _=JSON.parse('{"title":"代码注释","description":"","frontmatter":{},"headers":[],"relativePath":"java/basis/index3.md"}'),l={name:"java/basis/index3.md"},i=n("",7),p=[i];function t(r,c,o,d,u,b){return e(),a("div",null,p)}const h=s(l,[["render",t]]);export{_ as __pageData,h as default};

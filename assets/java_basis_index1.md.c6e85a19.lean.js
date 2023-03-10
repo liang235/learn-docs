@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.87b1f767.js";const A=JSON.parse('{"title":"书写格式","description":"","frontmatter":{},"headers":[],"relativePath":"java/basis/index1.md"}'),e={name:"java/basis/index1.md"},o=l("",3),p=[o];function c(t,r,i,d,y,D){return n(),a("div",null,p)}const F=s(e,[["render",c]]);export{A as __pageData,F as default};
