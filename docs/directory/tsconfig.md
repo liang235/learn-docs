@@ -1,0 +1,2 @@
+# [tsconfig.json](https://www.typescriptlang.org/zh/docs/handbook/tsconfig-json.html)
+如果一个目录下存在一个 `tsconfig.json` 文件，那么它意味着这个目录是 `TypeScript` 项目的根目录。`tsconfig.json` 文件中指定了用来编译这个项目的根文件和编译选项。 一个项目可以通过以下方式之一来编译
