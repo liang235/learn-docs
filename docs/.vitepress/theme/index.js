@@ -1,7 +1,7 @@
 /*
  * @Description: 使用自定义主题
  * @Date: 2022-09-08 17:08:17
- * @LastEditTime: 2023-02-22 16:52:15
+ * @LastEditTime: 2023-07-31 15:52:12
  */
 import { h } from 'vue' // vue
 import Theme from 'vitepress/theme' // 主题方案
@@ -13,11 +13,11 @@ import CustomerEvaluate from './components/CustomerEvaluate.vue'
 
 export default {
 	...Theme,
-	Layout() {
-		return h(Theme.Layout, null, {
-			'home-features-after': () => h(HomePreview),
-		})
-	},
+	// Layout() {
+	// 	return h(Theme.Layout, null, {
+	// 		'home-features-after': () => h(HomePreview),
+	// 	})
+	// },
 	enhanceApp({ app }) {
 		app.component('ZoomImg', ZoomImg)
 		app.component('CustomerEvaluate', CustomerEvaluate)

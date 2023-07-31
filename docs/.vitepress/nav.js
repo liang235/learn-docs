@@ -1,7 +1,7 @@
 /*
  * @Description: 头部导航
  * @Date: 2023-02-06 16:24:50
- * @LastEditTime: 2023-03-10 15:47:20
+ * @LastEditTime: 2023-07-31 15:20:03
  */
 export default [
 	{
@@ -44,27 +44,27 @@ export default [
 		text: 'JavaScript',
 		link: '/javascript/index',
 	},
-	{
-		text: 'TypeScript',
-		link: 'https://ts.xcatliu.com/',
-	},
+	// {
+	// 	text: 'TypeScript',
+	// 	link: 'https://ts.xcatliu.com/',
+	// },
 	{
 		text: 'CSS',
 		link: '/css/index',
 	},
-	{
-		text: 'Java',
-		items: [
-			{
-				items: [
-					{ text: 'Java', link: '/java/index' },
-					{ text: 'MySQL 数据库', link: '/mysql/index' },
-					{ text: 'JSP 开发', link: '/jsp/index' },
-					{ text: 'SpringBoot', link: '/springboot/index' },
-				],
-			},
-		],
-	},
+	// {
+	// 	text: 'Java',
+	// 	items: [
+	// 		{
+	// 			items: [
+	// 				{ text: 'Java', link: '/java/index' },
+	// 				{ text: 'MySQL 数据库', link: '/mysql/index' },
+	// 				{ text: 'JSP 开发', link: '/jsp/index' },
+	// 				{ text: 'SpringBoot', link: '/springboot/index' },
+	// 			],
+	// 		},
+	// 	],
+	// },
 	{
 		text: 'NodeJs',
 		link: '/nodejs/index',
