@@ -13,6 +13,7 @@ export default [
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: 'Cascader 级联选择器', link: `${commonPath}/cascader.md` },
+			{ text: 'Form 表单', link: `${commonPath}/form.md` },
 			{ text: 'Radio 单选框', link: `${commonPath}/radio.md` },
 			{ text: 'Select 选择器', link: `${commonPath}/select.md` },
 		],
