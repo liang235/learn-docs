@@ -1,7 +1,7 @@
 # [Form 表单](https://element-plus.gitee.io/zh-CN/component/form.html)
 
 ## 表单验证，手动验证
-* 主要解决使用自定义规则验证后，警告在重新验证成功后，不消失的问题
+- 主要解决使用自定义规则验证后，警告在重新验证成功后，不消失的问题
 ``` js
 <script setup>
 // 自定义附件表单验证
