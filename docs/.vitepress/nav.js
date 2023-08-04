@@ -1,7 +1,7 @@
 /*
  * @Description: 头部导航
  * @Date: 2023-02-06 16:24:50
- * @LastEditTime: 2023-07-31 15:20:03
+ * @LastEditTime: 2023-08-03 16:51:24
  */
 export default [
 	{
@@ -35,6 +35,10 @@ export default [
 				],
 			},
 		],
+	},
+	{
+		text: 'Q&A',
+		link: '/problem/index',
 	},
 	{
 		text: 'Vue',

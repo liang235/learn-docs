@@ -33,7 +33,9 @@ export default [
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: 'Dialog 对话框', link: `${commonPath}/dialog.md` },
-			{ text: 'Loading 加载', link: `${commonPath}/loading.md` }
+			{ text: 'Loading 加载', link: `${commonPath}/loading.md` },
+			{ text: 'Message 消息提示', link: `${commonPath}/message.md` },
+			{ text: 'MessageBox 消息弹框', link: `${commonPath}/message-box.md` }
 		],
 	},
 ]

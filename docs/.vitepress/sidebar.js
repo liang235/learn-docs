@@ -1,7 +1,7 @@
 /*
  * @Description: 多个侧边栏，根据页面路径显示不同的侧边栏
  * @Date: 2023-02-06 15:53:48
- * @LastEditTime: 2023-02-06 15:54:42
+ * @LastEditTime: 2023-08-03 16:49:55
  */
 import guideSidebar from './sidebar/guide.js' // 指南
 import packageSidebar from './sidebar/package.js' // 安装依赖
@@ -21,6 +21,7 @@ import otherSidebar from './sidebar/other.js' // 其他
 import directorySidebar from './sidebar/directory.js' // 目录结构
 import cssSidebar from './sidebar/css.js' // css
 import createViteSidebar from './sidebar/create-vite.js' // 项目搭建
+import problemSidebar from './sidebar/problem.js' // 常见问题
 
 export default {
 	'/guide/': guideSidebar,
@@ -41,4 +42,5 @@ export default {
 	'/directory/': directorySidebar,
 	'/css/': cssSidebar,
 	'/create-vite/': createViteSidebar,
+	'/problem/': problemSidebar,
 }
