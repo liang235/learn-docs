@@ -1,12 +1,11 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-02-28 17:05:22
+ * @LastEditTime: 2023-08-04 15:56:20
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.js' // 侧边栏
 import nav from './nav.js' // 头部导航
-import algolia from './algolia.js' // 搜索查询
 
 export default defineConfig({
 	title: '学习文档', // 站点的标题，浏览器 title 部分
@@ -45,7 +44,22 @@ export default defineConfig({
 		outline: 'deep',
 
 		// 搜索查询
-		algolia,
+		// search: {
+		// 	provider: 'local'
+		// }
+		search: {
+			provider: 'local',
+			options: {
+				translations: {
+					button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+					modal: {
+						noResultsText: '无法找到相关结果',
+						resetButtonTitle: '清除查询条件',
+						footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' },
+					},
+				},
+			},
+		},
 	},
 
 	markdown: {
