@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-08-04 15:56:20
+ * @LastEditTime: 2023-08-04 17:46:41
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.js' // 侧边栏
@@ -44,9 +44,6 @@ export default defineConfig({
 		outline: 'deep',
 
 		// 搜索查询
-		// search: {
-		// 	provider: 'local'
-		// }
 		search: {
 			provider: 'local',
 			options: {

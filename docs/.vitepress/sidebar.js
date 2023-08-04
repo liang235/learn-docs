@@ -1,46 +1,26 @@
 /*
  * @Description: 多个侧边栏，根据页面路径显示不同的侧边栏
  * @Date: 2023-02-06 15:53:48
- * @LastEditTime: 2023-08-03 16:49:55
+ * @LastEditTime: 2023-08-04 17:44:27
  */
-import guideSidebar from './sidebar/guide.js' // 指南
-import packageSidebar from './sidebar/package.js' // 安装依赖
-import vueuseSidebar from './sidebar/vueuse.js' // vue 工具库
-import lodashSidebar from './sidebar/lodash.js' // js 工具库
-import echartsSidebar from './sidebar/echarts.js' // echarts 图表
-import markdownSidebar from './sidebar/markdown.js' // markdown 语法
-import componentsSidebar from './sidebar/components.js' // 组件
-import vueSidebar from './sidebar/vue.js' // Vue
-import javascriptSidebar from './sidebar/javascript.js' // JavaScript
-import javaSidebar from './sidebar/java.js' // Java
-import mysqlSidebar from './sidebar/mysql.js' // mysql
-import jspSidebar from './sidebar/jsp.js' // mysql
-import nodejsSidebar from './sidebar/nodejs.js' // NodeJs
-import elementPlusSidebar from './sidebar/element-plus.js' // Element-plus
-import otherSidebar from './sidebar/other.js' // 其他
-import directorySidebar from './sidebar/directory.js' // 目录结构
-import cssSidebar from './sidebar/css.js' // css
-import createViteSidebar from './sidebar/create-vite.js' // 项目搭建
-import problemSidebar from './sidebar/problem.js' // 常见问题
-
 export default {
-	'/guide/': guideSidebar,
-	'/package/': packageSidebar,
-	'/vueuse/': vueuseSidebar,
-	'/lodash/': lodashSidebar,
-	'/echarts/': echartsSidebar,
-	'/markdown/': markdownSidebar,
-	'/components/': componentsSidebar,
-	'/vue/': vueSidebar,
-	'/javascript/': javascriptSidebar,
-	'/java/': javaSidebar,
-	'/mysql/': mysqlSidebar,
-	'/jsp/': jspSidebar,
-	'/nodejs/': nodejsSidebar,
-	'/element-plus/': elementPlusSidebar,
-	'/other/': otherSidebar,
-	'/directory/': directorySidebar,
-	'/css/': cssSidebar,
-	'/create-vite/': createViteSidebar,
-	'/problem/': problemSidebar,
+	'/guide/': require('./sidebar/guide.js').default,
+	'/package/': require('./sidebar/package.js').default,
+	'/vueuse/': require('./sidebar/vueuse.js').default,
+	'/lodash/': require('./sidebar/lodash.js').default,
+	'/echarts/': require('./sidebar/echarts.js').default,
+	'/markdown/': require('./sidebar/markdown.js').default,
+	'/components/': require('./sidebar/components.js').default,
+	'/vue/': require('./sidebar/vue.js').default,
+	'/javascript/': require('./sidebar/javascript.js').default,
+	'/java/': require('./sidebar/java.js').default,
+	'/mysql/': require('./sidebar/mysql.js').default,
+	'/jsp/': require('./sidebar/jsp.js').default,
+	'/nodejs/': require('./sidebar/nodejs.js').default,
+	'/element-plus/': require('./sidebar/element-plus.js').default,
+	'/other/': require('./sidebar/other.js').default,
+	'/directory/': require('./sidebar/directory.js').default,
+	'/css/': require('./sidebar/css.js').default,
+	'/create-vite/': require('./sidebar/create-vite.js').default,
+	'/problem/': require('./sidebar/problem.js').default,
 }
