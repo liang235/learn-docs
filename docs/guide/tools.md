@@ -5,56 +5,11 @@
 ``` js
 let originalArray = [1, 2, 3, 4, 5, 3, 2, 4, 1]
 
+// 方式1
 const result = Array.from(new Set(originalArray))
 console.log(result) // -> [1, 2, 3, 4, 5]
-```
 
-- 方式2
-``` js
-let originalArray = [1, 2, 3, 4, 5, 3, 2, 4, 1]
-
-const result = []
-const map = new Map()
-for (let v of originalArray) {
-	if (!map.has(v)) {
-		map.set(v, true)
-		result.push(v)
-	}
-}
-console.log(result) // -> [1, 2, 3, 4, 5]
-```
-
-- 方式3
-``` js
-let originalArray = [1, 2, 3, 4, 5, 3, 2, 4, 1]
-
-const result = []
-for (let v of originalArray) {
-	if (!result.includes(v)) {
-		result.push(v)
-	}
-}
-console.log(result) // -> [1, 2, 3, 4, 5]
-```
-
-- 方式4
-``` js
-let originalArray = [1, 2, 3, 4, 5, 3, 2, 4, 1]
-
-for (let i = 0; i < originalArray.length; i++) {
-	for (let j = i + 1; j < originalArray.length; j++) {
-		if (originalArray[i] === originalArray[j]) {
-			originalArray.splice(j, 1)
-			j--
-		}
-	}
-}
-```
-
-- 方式5
-``` js
-let originalArray = [1, 2, 3, 4, 5, 3, 2, 4, 1]
-
+// 方式2
 const obj = {}
 const result = originalArray.filter((item) => (obj.hasOwnProperty(typeof item + item) ? false : (obj[typeof item + item] = true)))
 console.log(result) // -> [1, 2, 3, 4, 5]
@@ -73,4 +28,34 @@ const result = responseList.reduce((acc, cur) => {
 	return ids.includes(cur.id) ? acc : [...acc, cur]
 }, [])
 console.log(result) // -> [ { id: 1, a: 1}, {id: 2, a: 2}, {id: 3, a: 3} ]
+```
+
+## 根据身份证号计算年龄
+``` js
+/**
+ * 根据身份证号计算年龄
+ * const idNumber = "身份证号码";
+ * const age = calculateAge(idNumber);
+*/
+export function calculateAgeAndBirthDate(idNumber) {
+    const year = idNumber.substring(6, 10);
+    const month = idNumber.substring(10, 12);
+    const day = idNumber.substring(12, 14);
+
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const currentMonth = today.getMonth() + 1;
+    const currentDay = today.getDate();
+
+    let age = currentYear - Number(year);
+
+    if (currentMonth < Number(month) || (currentMonth === Number(month) && currentDay < Number(day))) {
+        age--;
+    }
+
+    // birthDate 为 23 Sat Jan 01 2000 00:00:00 GMT+0800 (中国标准时间)
+    const birthDate = new Date(year, Number(month) - 1, day);
+
+    return { age, birthDate };
+}
 ```
