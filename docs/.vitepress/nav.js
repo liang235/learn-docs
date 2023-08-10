@@ -1,7 +1,7 @@
 /*
  * @Description: 头部导航
  * @Date: 2023-02-06 16:24:50
- * @LastEditTime: 2023-08-03 16:51:24
+ * @LastEditTime: 2023-08-10 15:27:29
  */
 export default [
 	{
@@ -32,6 +32,7 @@ export default [
 					{ text: 'lodash', link: '/lodash/index' },
 					{ text: 'echarts', link: '/echarts/index' },
 					{ text: 'markdown', link: '/markdown/index' },
+					{ text: 'vitepress', link: '/vitepress/index' },
 				],
 			},
 		],

@@ -1,7 +1,7 @@
 /*
  * @Description: 多个侧边栏，根据页面路径显示不同的侧边栏
  * @Date: 2023-02-06 15:53:48
- * @LastEditTime: 2023-08-04 17:44:27
+ * @LastEditTime: 2023-08-10 15:26:56
  */
 export default {
 	'/guide/': require('./sidebar/guide.js').default,
@@ -23,4 +23,5 @@ export default {
 	'/css/': require('./sidebar/css.js').default,
 	'/create-vite/': require('./sidebar/create-vite.js').default,
 	'/problem/': require('./sidebar/problem.js').default,
+	'/vitepress/': require('./sidebar/vitepress.js').default,
 }

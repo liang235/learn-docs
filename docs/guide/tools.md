@@ -33,9 +33,9 @@ console.log(result) // -> [ { id: 1, a: 1}, {id: 2, a: 2}, {id: 3, a: 3} ]
 ## 根据身份证号计算年龄
 ``` js
 /**
- * 根据身份证号计算年龄
+ * 根据身份证号计算年龄，出生日期
  * const idNumber = "身份证号码";
- * const age = calculateAge(idNumber);
+ * const { age, birthDate } = calculateAge(idNumber);
 */
 export function calculateAgeAndBirthDate(idNumber) {
     const year = idNumber.substring(6, 10);
