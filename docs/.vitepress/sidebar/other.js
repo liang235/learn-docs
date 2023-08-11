@@ -23,7 +23,6 @@ export default [
 			{ text: 'npm', link: `${toolsPath}/npm.md` },
 			{ text: 'iterm', link: `${toolsPath}/iterm.md` },
 			{ text: 'eclipse', link: `${toolsPath}/eclipse.md` },
-			{ text: 'vitepress 离线搜索', link: `${toolsPath}/vitepress-search.md` },
 		],
 	},
 ]
