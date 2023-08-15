@@ -1,7 +1,7 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
  * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-08-14 18:18:53
+ * @LastEditTime: 2023-08-15 14:25:49
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.mjs' // 侧边栏
@@ -38,7 +38,8 @@ export default defineConfig({
 			copyright: 'Copyright © 2022-present feiye',
 		},
 
-		outlineTitle: 'On this page', // 标题大纲
+		// 标题大纲
+		outlineTitle: '当前页导航',
 
 		// 大纲显示级别：https://vitepress.vuejs.org/config/theme-config#outline
 		outline: 'deep',
