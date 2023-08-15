@@ -14,6 +14,7 @@ export default [
 		items: [
 			{ text: 'Cascader 级联选择器', link: `${commonPath}/cascader.md` },
 			{ text: 'Form 表单', link: `${commonPath}/form.md` },
+			{ text: 'Input 输入框', link: `${commonPath}/input.md` },
 			{ text: 'Radio 单选框', link: `${commonPath}/radio.md` },
 			{ text: 'Select 选择器', link: `${commonPath}/select.md` },
 		],
