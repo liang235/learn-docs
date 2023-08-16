@@ -30,32 +30,39 @@ const result = responseList.reduce((acc, cur) => {
 console.log(result) // -> [ { id: 1, a: 1}, {id: 2, a: 2}, {id: 3, a: 3} ]
 ```
 
-## 根据身份证号计算年龄
+## 根据身份证号计算
 ``` js
 /**
- * 根据身份证号计算年龄，出生日期
- * const idNumber = "身份证号码";
- * const { age, birthDate } = calculateAge(idNumber);
+ * 根据身份证号计算 出生日期/年龄/性别
+ * const idCard = "身份证号码";
+ * const { age, birthDate, gender } = calcAgeBirthDayGender(idCard);
 */
-export function calculateAgeAndBirthDate(idNumber) {
-    const year = idNumber.substring(6, 10);
-    const month = idNumber.substring(10, 12);
-    const day = idNumber.substring(12, 14);
+export function calcAgeBirthDayGender(idCard) {
+    // 获取出生日期中的年、月、日
+    const year = idCard.substring(6, 10);
+    const month = idCard.substring(10, 12);
+    const day = idCard.substring(12, 14);
 
-    const today = new Date();
-    const currentYear = today.getFullYear();
-    const currentMonth = today.getMonth() + 1;
-    const currentDay = today.getDate();
+    // 获取当前日期中的年、月、日
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentDay = currentDate.getDate();
 
-    let age = currentYear - Number(year);
-
-    if (currentMonth < Number(month) || (currentMonth === Number(month) && currentDay < Number(day))) {
+    // 计算年龄
+    let age = currentYear - parseInt(year);
+    if (currentMonth < parseInt(month) || (currentMonth === parseInt(month) && currentDay < parseInt(day))) {
         age--;
     }
 
-    // birthDate 为 23 Sat Jan 01 2000 00:00:00 GMT+0800 (中国标准时间)
-    const birthDate = new Date(year, Number(month) - 1, day);
+    // 计算性别
+    const genderCode = idCard.substring(16, 17);
+    const gender = genderCode % 2 === 0 ? "女" : "男";
 
-    return { age, birthDate };
+    // 格式化出生日期
+    const birthday = year + "-" + month + "-" + day;
+
+    // 返回结果
+    return { age, birthday, gender };
 }
 ```
