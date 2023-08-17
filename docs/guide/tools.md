@@ -35,7 +35,7 @@ console.log(result) // -> [ { id: 1, a: 1}, {id: 2, a: 2}, {id: 3, a: 3} ]
 /**
  * 根据身份证号计算 出生日期/年龄/性别
  * const idCard = "身份证号码";
- * const { age, birthDate, gender } = calcAgeBirthDayGender(idCard);
+ * const { age, birthday, gender } = calcAgeBirthDayGender(idCard);
 */
 export function calcAgeBirthDayGender(idCard) {
     // 获取出生日期中的年、月、日

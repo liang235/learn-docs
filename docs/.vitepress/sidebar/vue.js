@@ -12,6 +12,7 @@ export default [
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
+			{ text: '事件修饰符', link: `${commonPath}/event-modifiers.md` },
 			{ text: '父子组件传参', link: `${commonPath}/father-son.md` },
 			{ text: 'watch 监听', link: `${commonPath}/watch.md` },
 			{ text: ':deep() 样式穿透', link: `${commonPath}/:deep().md` },

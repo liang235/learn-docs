@@ -6,9 +6,9 @@
 	"author": "",
 	"license": "MIT",
 	"scripts": {
-		"dev": "vitepress dev docs",
+		"dev": "vitepress dev docs --port 9000",
 		"build": "vitepress build docs",
-		"preview": "vitepress preview docs"
+		"preview": "vitepress preview docs --port 9000"
 	},
 	"dependencies": {
 		"medium-zoom": "^1.0.8"
