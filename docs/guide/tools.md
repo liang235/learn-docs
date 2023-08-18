@@ -33,10 +33,13 @@ console.log(result) // -> [ { id: 1, a: 1}, {id: 2, a: 2}, {id: 3, a: 3} ]
 ## 根据身份证号计算
 ``` js
 /**
- * 根据身份证号计算 出生日期/年龄/性别
- * const idCard = "身份证号码";
- * const { age, birthday, gender } = calcAgeBirthDayGender(idCard);
-*/
+ * 根据身份证号码计算年龄、出生日期和性别
+ * @param {string} idCard - 身份证号码
+ * @returns {object} - 包含年龄、出生日期和性别的对象
+ *                    - age: 年龄 (number)
+ *                    - birthday: 出生日期 (string)，格式为 'YYYY-MM-DD'
+ *                    - gender: 性别 (string)，取值为 '男' 或 '女'
+ */
 export function calcAgeBirthDayGender(idCard) {
     // 获取出生日期中的年、月、日
     const year = idCard.substring(6, 10);
@@ -64,5 +67,24 @@ export function calcAgeBirthDayGender(idCard) {
 
     // 返回结果
     return { age, birthday, gender };
+}
+```
+
+## 格式化金额
+```js
+/**
+ * 格式化金额
+ * @param {number} amount - 需要格式化的金额
+ * @param {string} separator - 分隔符，默认为逗号
+ * @param {number} decimal - 保留小数位数，默认为2位
+ * @returns {string} - 格式化后的金额字符串
+ */
+export function formatAmount(amount, separator = ',', decimal = 2) {
+    const amountStr = amount.toFixed(decimal).toString(); // 将金额转换为字符串，保留指定的小数位数
+
+    // 使用正则表达式和替换函数，在每三位数字之前插入分隔符
+    const formattedAmount = amountStr.replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+
+    return formattedAmount;
 }
 ```
