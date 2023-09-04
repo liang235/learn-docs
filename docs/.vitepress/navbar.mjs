@@ -36,7 +36,7 @@ export default [
 		],
 	},
 	{
-		text: 'Q&A',
+		text: '案例',
 		link: '/problem/index',
 		activeMatch: '/problem/'
 	},

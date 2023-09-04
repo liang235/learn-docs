@@ -14,6 +14,7 @@ export default [
         items: [
             { text: '搜索关键字高亮', link: `${commonPath}/keyword-highlighting.md` },
             { text: '倒计时', link: `${commonPath}/countdown.md` },
+            { text: '无限滚动', link: `${commonPath}/infinite-scroll.md` },
         ],
     },
 ]

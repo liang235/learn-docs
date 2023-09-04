@@ -17,8 +17,9 @@ export default [
 			{ text: '字符串', link: `${commonPath}/string.md` },
 			{ text: '对象', link: `${commonPath}/object.md` },
 			{ text: '遍历循环', link: `${commonPath}/traversal.md` },
-			{ text: 'Date 日期', link: `${commonPath}/date.md` },
 			{ text: '特殊字符', link: `${commonPath}/character.md` },
+			{ text: 'null 和 undefined', link: `${commonPath}/null-undefined.md` },
+			{ text: '面试题', link: `${commonPath}/interview.md` },
 		],
 	},
 ]

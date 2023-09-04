@@ -88,3 +88,34 @@ export function formatAmount(amount, separator = ',', decimal = 2) {
     return formattedAmount;
 }
 ```
+
+## 获取当前日期
+```js
+/**
+ * 获取当前日期函数
+ * padStart()方法，它可以在数字不足指定长度时，在前面补充指定的字符（在这里是补充0）
+ * @returns {string} 格式化后的日期和时间字符串，例如：2022-01-01 12:30
+ */
+export function getNowFormatDate() {
+    // 获取当前日期和时间
+    const date = new Date();
+
+    // 获取完整的年份(4位)，并补足不足4位的部分
+    const year = date.getFullYear().toString().padStart(4, '0');
+
+    // 获取当前月份(0-11,0代表1月)，并补足不足2位的部分
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+
+    // 获取当前日(1-31)，并补足不足2位的部分
+    const strDate = date.getDate().toString().padStart(2, '0');
+
+    // 获取当前小时(0-23)，并补足不足2位的部分
+    const hour = date.getHours().toString().padStart(2, '0');
+
+    // 获取当前分钟(0-59)，并补足不足2位的部分
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    // 返回格式化后的日期和时间字符串
+    return `${year}-${month}-${strDate} ${hour}:${minutes}`;
+}
+```
