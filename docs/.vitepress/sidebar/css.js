@@ -17,6 +17,7 @@ export default [
 			{ text: '奥运五环', link: `${commonPath}/olympic_rings.md` },
 			{ text: '重复渐变的边框', link: `${commonPath}/repeated_gradient_border.md` },
 			{ text: '立体文字', link: `${commonPath}/3d_text.md` },
+			{ text: '连续文字光影', link: `${commonPath}/continuous_text_shadow.md` },
 			{ text: '图片九宫格', link: `${commonPath}/image_grid.md` },
 		],
 	},
