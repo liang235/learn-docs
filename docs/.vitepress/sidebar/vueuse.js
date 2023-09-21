@@ -10,7 +10,7 @@ export default [
     {
         text: 'vueuse',
         collapsible: false, // 是否可折叠的侧边栏组
-        collapsed: true, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+        collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
             { text: '介绍', link: `${commonPath}/index.md` },
         ],
@@ -20,7 +20,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${statePath}/index.md` },
             { text: 'useStorage - 存储', link: `${statePath}/useStorage.md` },
             { text: 'useLocalStorage - 存储', link: `${statePath}/useLocalStorage.md` },
         ],
@@ -30,7 +29,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${browserPath}/index.md` },
             { text: 'useClipboard - 剪切板', link: `${browserPath}/useClipboard.md` },
             { text: 'useDark - 高亮/暗黑', link: `${browserPath}/useDark.md` },
             { text: 'useImage - 图片状态', link: `${browserPath}/useImage.md` },
@@ -43,7 +41,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${sensorsPath}/index.md` },
             { text: 'onClickOutside - 监听元素之外', link: `${sensorsPath}/onClickOutside.md` },
         ],
     },
@@ -52,8 +49,8 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${componentPath}/index.md` },
-            { text: 'useVModel - v-model', link: `${componentPath}/useVModel.md` },
+            { text: 'useVModel - v-model 简写', link: `${componentPath}/useVModel.md` },
+            { text: 'useVModels - v-model 简写', link: `${componentPath}/useVModels.md` },
         ],
     },
     {
@@ -61,7 +58,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${utilitiesPath}/index.md` },
             { text: 'useEventBus - 事件总线', link: `${utilitiesPath}/useEventBus.md` },
             { text: 'useDebounceFn - 防抖', link: `${utilitiesPath}/useDebounceFn.md` },
             { text: 'useThrottleFn - 节流', link: `${utilitiesPath}/useThrottleFn.md` },
@@ -73,7 +69,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: '介绍', link: `${integrationsPath}/index.md` },
             { text: 'useFocusTrap - 焦点', link: `${integrationsPath}/useFocusTrap.md` },
             { text: 'useNProgress - 进度条', link: `${integrationsPath}/useNProgress.md` },
         ],

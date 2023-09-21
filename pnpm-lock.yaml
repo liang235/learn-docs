@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   vitepress:
-    specifier: 1.0.0-rc.10
-    version: registry.npmmirror.com/vitepress@1.0.0-rc.10
+    specifier: 1.0.0-rc.14
+    version: registry.npmmirror.com/vitepress@1.0.0-rc.14
   vue:
     specifier: ^3.3.4
     version: registry.npmmirror.com/vue@3.3.4
@@ -895,10 +895,10 @@ packages:
       fsevents: registry.npmmirror.com/fsevents@2.3.2
     dev: true
 
-  registry.npmmirror.com/shiki@0.14.3:
-    resolution: {integrity: sha512-U3S/a+b0KS+UkTyMjoNojvTgrBHjgp7L6ovhFVZsXmBGnVdQ4K4U9oK0z63w538S91ATngv1vXigHCSWOwnr+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/shiki/-/shiki-0.14.3.tgz}
+  registry.npmmirror.com/shiki@0.14.4:
+    resolution: {integrity: sha512-IXCRip2IQzKwxArNNq1S+On4KPML3Yyn8Zzs/xRgcgOWIr8ntIK3IKzjFPfjy/7kt9ZMjc+FItfqHRBg8b6tNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/shiki/-/shiki-0.14.4.tgz}
     name: shiki
-    version: 0.14.3
+    version: 0.14.4
     dependencies:
       ansi-sequence-parser: registry.npmmirror.com/ansi-sequence-parser@1.1.1
       jsonc-parser: registry.npmmirror.com/jsonc-parser@3.2.0
@@ -963,11 +963,16 @@ packages:
       fsevents: registry.npmmirror.com/fsevents@2.3.2
     dev: true
 
-  registry.npmmirror.com/vitepress@1.0.0-rc.10:
-    resolution: {integrity: sha512-+MsahIWqq5WUEmj6MR4obcKYbT7im07jZPCQPdNJExkeOSbOAJ4xypSLx88x7rvtzWHhHc5aXbOhCRvGEGjFrw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.10.tgz}
+  registry.npmmirror.com/vitepress@1.0.0-rc.14:
+    resolution: {integrity: sha512-yChIeXOAcNvVnSVjhziH1vte0uhKb00PuZf7KdIMfx3ixTMAz73Nn+6gREvCv0SdH+anteGUKz5eljv0ygcgGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.14.tgz}
     name: vitepress
-    version: 1.0.0-rc.10
+    version: 1.0.0-rc.14
     hasBin: true
+    peerDependencies:
+      markdown-it-mathjax3: ^4.3.2
+    peerDependenciesMeta:
+      markdown-it-mathjax3:
+        optional: true
     dependencies:
       '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.5.2
       '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.5.2
@@ -977,7 +982,7 @@ packages:
       focus-trap: registry.npmmirror.com/focus-trap@7.5.2
       mark.js: registry.npmmirror.com/mark.js@8.11.1
       minisearch: registry.npmmirror.com/minisearch@6.1.0
-      shiki: registry.npmmirror.com/shiki@0.14.3
+      shiki: registry.npmmirror.com/shiki@0.14.4
       vite: registry.npmmirror.com/vite@4.4.9
       vue: registry.npmmirror.com/vue@3.3.4
     transitivePeerDependencies:
