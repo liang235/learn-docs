@@ -59,19 +59,6 @@ export default [
 		link: '/css/index',
 		activeMatch: '/css/'
 	},
-	// {
-	// 	text: 'Java',
-	// 	items: [
-	// 		{
-	// 			items: [
-	// 				{ text: 'Java', link: '/java/index' },
-	// 				{ text: 'MySQL 数据库', link: '/mysql/index' },
-	// 				{ text: 'JSP 开发', link: '/jsp/index' },
-	// 				{ text: 'SpringBoot', link: '/springboot/index' },
-	// 			],
-	// 		},
-	// 	],
-	// },
 	{
 		text: 'NodeJs',
 		link: '/nodejs/index',

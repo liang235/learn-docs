@@ -1,7 +1,5 @@
 /*
  * @Description: 配置 VitePress 站点的基本文件
- * @Date: 2022-12-22 20:00:00
- * @LastEditTime: 2023-08-15 14:25:49
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.mjs' // 侧边栏
