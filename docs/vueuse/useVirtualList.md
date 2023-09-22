@@ -6,7 +6,7 @@
 <template>
 	<div v-bind="containerProps" class="useVirtualList">
 		<div v-bind="wrapperProps">
-			<el-table ref="el" :data="list" border>
+			<el-table :data="list" border>
                 <el-table-column prop="id" label="id">
                     <template #default="scope">
                         {{ scope.row.data.id }}
