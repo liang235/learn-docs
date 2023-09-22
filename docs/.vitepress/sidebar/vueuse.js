@@ -35,6 +35,7 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
+            { text: 'useInfiniteScroll - 无限滚动', link: `${commonPath}/useInfiniteScroll.md` },
             { text: 'onClickOutside - 监听元素之外', link: `${commonPath}/onClickOutside.md` },
         ],
     },
@@ -43,6 +44,7 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
+            { text: 'useVirtualList - 虚拟加载', link: `${commonPath}/useVirtualList.md` },
             { text: 'useVModel - v-model 简写', link: `${commonPath}/useVModel.md` },
             { text: 'useVModels - v-model 简写', link: `${commonPath}/useVModels.md` },
         ],
