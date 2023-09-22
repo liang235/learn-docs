@@ -7,18 +7,19 @@
 	<div v-bind="containerProps" class="useVirtualList">
 		<div v-bind="wrapperProps">
 			<el-table :data="list" border>
-                <el-table-column prop="id" label="id">
-                    <template #default="scope">
-                        {{ scope.row.data.id }}
-                    </template>
-                </el-table-column>
-                <el-table-column prop="title" label="title">
-                    <template #default="scope">
-                        {{ scope.row.data.title }}
-                    </template>
-                </el-table-column>
-            </el-table>
-            <div class="loading"><svg-icon v-if="fetchingData" name="ele-loading" />请求更多数据操作中</div>
+				<el-table-column prop="id" label="id">
+					<template #default="scope">
+						{{ scope.row.data.id }}
+					</template>
+				</el-table-column>
+				<el-table-column prop="title" label="title">
+					<template #default="scope">
+						{{ scope.row.data.title }}
+					</template>
+				</el-table-column>
+			</el-table>
+			<div v-if="fetchingData" class="loading"><svg-icon name="ele-loading" />请求更多数据操作中</div>
+			<div v-else class="loading">暂无更多数据</div>
 		</div>
 	</div>
 </template>
@@ -28,7 +29,7 @@ import { useInfiniteScroll, useVirtualList } from '@vueuse/core'
 import axios from 'axios'
 
 const page = ref(1) // 当前页
-const limit = ref(10) // 每页条数
+const limit = ref(20) // 每页条数
 const photosList = ref([]) // 数据列表
 const fetchingData = ref(false) // 是否正在加载数据的标志
 const canLoadData = ref(true) // 是否还能加载更多数据的标志
@@ -48,7 +49,7 @@ const getPhotosList = async () => {
 	})
 
 	// 发起请求获取数据
-	const { data } = await axios(`http://jsonplaceholder.typicode.com/photos?_page=${page.value}&_limit=${limit.value}`)
+	const { data } = await axios(`http://jsonplaceholder.typicode.com/posts?_page=${page.value}&_limit=${limit.value}`)
 
 	// 如果返回的数据长度小于每页条数，说明已经没有更多数据可加载了
 	if (data.length < limit.value) {
@@ -84,8 +85,7 @@ useInfiniteScroll(
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 20px;
+	padding: 20px;
 }
 </style>
-
 ```
