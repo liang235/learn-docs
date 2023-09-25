@@ -14,7 +14,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'State 说明', link: `${commonPath}/State.md` },
             { text: 'useRefHistory ref 历史记录', link: `${commonPath}/useRefHistory.md` },
             { text: 'useStorage 存储', link: `${commonPath}/useStorage.md` },
             { text: 'useLocalStorage 存储', link: `${commonPath}/useLocalStorage.md` },
@@ -25,7 +24,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'Elements 说明', link: `${commonPath}/Elements.md` },
             { text: 'useElementVisibility 元素可见性', link: `${commonPath}/useElementVisibility.md` },
             { text: 'useIntersectionObserver 交叉观察器', link: `${commonPath}/useIntersectionObserver.md` },
         ],
@@ -35,7 +33,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'Browser 说明', link: `${commonPath}/Browser.md` },
             { text: 'useClipboard 剪切板', link: `${commonPath}/useClipboard.md` },
             { text: 'useDark 高亮/暗黑', link: `${commonPath}/useDark.md` },
             { text: 'useImage 图片状态', link: `${commonPath}/useImage.md` },
@@ -48,7 +45,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'Sensors 说明', link: `${commonPath}/Sensors.md` },
             { text: 'onClickOutside 监听元素外部的点击', link: `${commonPath}/onClickOutside.md` },
             { text: 'useInfiniteScroll 无限滚动', link: `${commonPath}/useInfiniteScroll.md` },
         ],
@@ -58,7 +54,6 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'Component 说明', link: `${commonPath}/Component.md` },
             { text: 'useVirtualList 虚拟加载', link: `${commonPath}/useVirtualList.md` },
             { text: 'useVModel v-model 简写', link: `${commonPath}/useVModel.md` },
             { text: 'useVModels v-model 简写', link: `${commonPath}/useVModels.md` },
