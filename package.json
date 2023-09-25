@@ -14,7 +14,7 @@
 		"medium-zoom": "^1.0.8"
 	},
 	"devDependencies": {
-		"vitepress": "1.0.0-rc.14",
+		"vitepress": "1.0.0-rc.20",
 		"vue": "^3.3.4"
 	},
 	"pnpm": {

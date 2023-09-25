@@ -1,6 +1,6 @@
 # [watch 监听](https://cn.vuejs.org/api/reactivity-core.html#watch)
 
-## 箭头 ref 数据
+## 监听 ref 数据
 ``` js
 // 监听 ref 单个数据
 watch(name, (newVal, oldVal) => {

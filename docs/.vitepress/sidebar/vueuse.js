@@ -10,7 +10,7 @@ export default [
         ],
     },
     {
-        text: '状态',
+        text: 'State',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
@@ -19,7 +19,15 @@ export default [
         ],
     },
     {
-        text: '浏览器',
+        text: 'Elements',
+        collapsible: true, // 是否可折叠的侧边栏组
+        collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+        items: [
+            { text: 'useElementVisibility - 判断元素是否在可视窗口内', link: `${commonPath}/useElementVisibility.md` },
+        ],
+    },
+    {
+        text: 'Browser',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
@@ -31,7 +39,7 @@ export default [
         ],
     },
     {
-        text: '传感器',
+        text: 'Sensors',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
@@ -40,7 +48,7 @@ export default [
         ],
     },
     {
-        text: '组件',
+        text: 'Component',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
@@ -50,7 +58,7 @@ export default [
         ],
     },
     {
-        text: '公共方法',
+        text: 'Utilities',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
@@ -61,7 +69,7 @@ export default [
         ],
     },
     {
-        text: '集成',
+        text: '@Integrations',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
