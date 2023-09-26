@@ -1,4 +1,4 @@
-# useFocusTrap
+# [useFocusTrap](https://www.vueusejs.com/integrations/useFocusTrap/)
 响应式包装器 [focus-trap](https://github.com/focus-trap/focus-trap#createfocustrapelement-createoptions)
 
 有关可以传递哪些选项的更多信息，请参阅 [focus-trap](https://github.com/focus-trap/focus-trap#createfocustrapelement-createoptions) 文档中的 `createOptions`

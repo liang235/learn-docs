@@ -50,6 +50,14 @@ export default [
         ],
     },
     {
+        text: 'Animation 动画',
+        collapsible: true, // 是否可折叠的侧边栏组
+        collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
+        items: [
+            { text: 'useTransition 值之间的过度', link: `${commonPath}/useTransition.md` },
+        ],
+    },
+    {
         text: 'Component 组件',
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
@@ -75,7 +83,7 @@ export default [
         collapsible: true, // 是否可折叠的侧边栏组
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
-            { text: 'useFocusTrap 焦点', link: `${commonPath}/useFocusTrap.md` },
+            { text: 'useFocusTrap 焦点捕获', link: `${commonPath}/useFocusTrap.md` },
             { text: 'useNProgress 进度条', link: `${commonPath}/useNProgress.md` },
         ],
     },
