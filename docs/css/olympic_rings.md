@@ -1,7 +1,7 @@
 # 奥运五环
 
 ## 效果展示
-<ZoomImg src="/olympic_rings.png" />
+![](/olympic_rings.png){data-zoomable}
 
 ## 代码实现
 ```vue
