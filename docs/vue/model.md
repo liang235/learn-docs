@@ -110,3 +110,22 @@ const editParent = () => {
 ```
 
 :::
+
+## v-model陷阱，连续输入瞬间卡半天
+- 这是为什么呢？其实原因很简单，就是因为 `v-model` 的双向绑定机制。`v-model` 其实是 `:value + @input` 组合的语法糖，也就是说，当文本框的值发生变化时，会触发 `@input` 事件，并更新绑定的数据
+- 而当数据发生变化时，Vue会重新渲染组件，并更新文本框的值
+- 这样一来，如果我们在文本框中频繁输入文字，就会导致组件频繁重新渲染
+- 如果我们手速很快，一秒钟可以输入几十个字，那么组件就会在一秒钟内渲染几十次
+- 而组件的渲染其实是一个 `JS` 行为，而JS的执行会阻塞浏览器的其他动作，比如动画效果
+- 只要给 `v-model` 加上一个修饰符 `v-model.lazy` 就行了。这个修饰符可以让 `v-model` 监听文本框的 `change` 事件而不是 `input` 事件
+
+```js
+// v-model
+<input v-model="..." />
+// v-model 就是 :value + @input 组合的语法糖
+<input :value="..." @input="..." />
+// 当加了 .lazy 修饰符之后
+<input v-model.lazy=="..." />
+// v-model 就变成了:value + @change 组合的语法糖
+<input :value="..." @change="..." />
+```
