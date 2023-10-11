@@ -14,15 +14,16 @@
 		"medium-zoom": "^1.0.8"
 	},
 	"devDependencies": {
+		"sass": "^1.69.2",
 		"vitepress": "1.0.0-rc.20",
 		"vue": "^3.3.4"
 	},
 	"pnpm": {
-	  "peerDependencyRules": {
-	    "ignoreMissing": [
-	      "@algolia/client-search",
-	      "search-insights"
-	    ]
-	  }
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@algolia/client-search",
+				"search-insights"
+			]
+		}
 	}
 }
