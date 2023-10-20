@@ -10,7 +10,13 @@ export default defineConfig({
 	description: '一款开箱即用的 Vue 中后台管理系统框架，采用 Vue3 + Vite2 技术栈',
 	lang: 'zh-cn', // 语言
 	base: '/learn-docs/',
-	head: [  ['link', { rel: 'icon', href: '/vitepress-logo-mini.svg' }]],
+	head: [  
+		['link', { rel: 'icon', href: '/vitepress-logo-mini.svg' }],
+		['meta', { 'http-equiv': 'Expires', 'content': '0' }],
+		['meta', { 'http-equiv': 'Pragma', 'content': 'no-cache' }],
+		['meta', { 'http-equiv': 'Cache-control', 'content': 'no-cache' }],
+		['meta', { 'http-equiv': 'Cache', 'content': 'no-cache' }],
+	],
 
 	themeConfig: {
 		siteTitle: '学习文档', // 网站标题，默认情况下，nav 显示站点引用config.title值的标题
