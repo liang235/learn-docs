@@ -6,7 +6,7 @@
 	"author": "",
 	"license": "MIT",
 	"scripts": {
-		"dev": "vitepress dev docs --port 9000",
+		"dev": "vitepress dev docs --port 9000 --open",
 		"build": "vitepress build docs",
 		"preview": "vitepress preview docs --port 9000"
 	},
@@ -14,9 +14,9 @@
 		"medium-zoom": "^1.0.8"
 	},
 	"devDependencies": {
-		"sass": "^1.69.2",
-		"vitepress": "1.0.0-rc.20",
-		"vue": "^3.3.4"
+		"sass": "^1.69.4",
+		"vitepress": "1.0.0-rc.22",
+		"vue": "^3.3.5"
 	},
 	"pnpm": {
 		"peerDependencyRules": {
