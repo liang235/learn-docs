@@ -11,7 +11,7 @@ export default defineConfig({
 	lang: 'zh-cn', // 语言
 	base: '/learn-docs/',
 	head: [  
-		['link', { rel: 'icon', href: '/vitepress-logo-mini.svg' }],
+		['link', { rel: 'icon', href: '/base/vitepress-logo-mini.svg' }],
 		['meta', { 'http-equiv': 'Expires', 'content': '0' }],
 		['meta', { 'http-equiv': 'Pragma', 'content': 'no-cache' }],
 		['meta', { 'http-equiv': 'Cache-control', 'content': 'no-cache' }],
