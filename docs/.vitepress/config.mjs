@@ -9,7 +9,7 @@ export default defineConfig({
 	title: '学习文档', // 站点的标题，浏览器 title 部分
 	description: '一款开箱即用的 Vue 中后台管理系统框架，采用 Vue3 + Vite2 技术栈',
 	lang: 'zh-cn', // 语言
-	base: '/',
+	base: '/learn-docs/',
 	head: [  
 		['link', { rel: 'icon', href: '/vitepress-logo-mini.svg' }],
 		['meta', { 'http-equiv': 'Expires', 'content': '0' }],
