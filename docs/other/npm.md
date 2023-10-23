@@ -1,5 +1,5 @@
-# npm
-包管理器
+# [npm](https://www.npmjs.com/)
+包管理工具
 
 ## 基础用法
 | 命令        |      作用      |

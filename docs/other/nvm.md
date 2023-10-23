@@ -1,4 +1,5 @@
 # [nvm](https://github.com/nvm-sh/nvm)
+`node` 版本管理器
 
 ## 查看 node 版本
 | 命令        |      作用      |
