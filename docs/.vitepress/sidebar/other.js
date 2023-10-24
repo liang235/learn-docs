@@ -20,6 +20,7 @@ export default [
 			{ text: 'pnpm', link: `${commonPath}/pnpm.md` },
 			{ text: 'vscode', link: `${commonPath}/vscode.md` },
 			{ text: 'typora', link: `${commonPath}/typora.md` },
+			{ text: 'idea', link: `${commonPath}/idea.md` },
 			{ text: 'iterm', link: `${commonPath}/iterm.md` },
 			{ text: 'eclipse', link: `${commonPath}/eclipse.md` },
 			{ text: 'jdk', link: `${commonPath}/jdk.md` },

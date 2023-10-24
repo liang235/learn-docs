@@ -15,6 +15,7 @@
 | npm ls -g --depth 0 | 查看全局安装包路径，输出路径与安装包列表 |
 
 ## 更新 package.json 包版本
+
 ### 安装 [npm-check-updates](https://github.com/raineorshine/npm-check-updates)
 ```
 npm install -g npm-check-updates
