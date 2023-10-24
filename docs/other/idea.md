@@ -15,3 +15,6 @@ https://www.quanxiaoha.com/idea/idea-set-jdk.html
 ## 启动 Java 项目
 ### 配置 resin
 https://caucho.com/products/resin/download/archive
+
+## Mac 彻底删除 Idea
+https://blog.csdn.net/u013412066/article/details/128737710
