@@ -6,8 +6,6 @@ https://www.quanxiaoha.com/idea/idea-tutorial.html
 ## 破解教程
 https://blog.idejihuo.com/jetbrains
 
-- 或者 `docs/file/jetbra.zip`
-
 ## idea 插件官网
 https://plugins.jetbrains.com/
 
