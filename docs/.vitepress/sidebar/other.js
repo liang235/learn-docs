@@ -12,6 +12,7 @@ export default [
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
+			{ text: 'mac', link: `${commonPath}/mac.md` },
 			{ text: 'cmd', link: `${commonPath}/cmd.md` },
 			{ text: 'nvm', link: `${commonPath}/nvm.md` },
 			{ text: 'npm', link: `${commonPath}/npm.md` },

@@ -1,4 +1,5 @@
 # [IDEA](https://www.jetbrains.com.cn/idea/download/?section=mac)
+一款好用的代码编辑器
 
 ## 使用教程
 https://www.quanxiaoha.com/idea/idea-tutorial.html

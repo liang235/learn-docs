@@ -11,8 +11,8 @@
 | npm ls      | 查看项目中的包 |
 | npm ls -g      |   查看全局安装包    |
 | npm config get prefix |   查看全局安装包路径，只输出路径    |
-| npm config set prefix '~/.npm-global' | 设置全局安装包路径 |
 | npm ls -g --depth 0 | 查看全局安装包路径，输出路径与安装包列表 |
+| npm config set prefix '~/.npm-global' | 设置全局安装包路径 |
 
 ## 更新 package.json 包版本
 

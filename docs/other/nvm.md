@@ -27,3 +27,10 @@ source ~/.profile
 // 5.执行完第四部之后，有时候在打开终端还是需要再执行一下才会生效
 // 6.打开 ~/.zshrc 这个文件，在 .zshrc 文件里后面添加 source ~/.profile
 ```
+
+- 不过上面的操作会提示 与 `nvm` 版本不兼容
+```
+Your user’s .npmrc file (${HOME}/.npmrc)
+has a `globalconfig` and/or a `prefix` setting, which are incompatible with nvm.
+Run `nvm use --delete-prefix v18.18.2 --silent` to unset it.
+```
