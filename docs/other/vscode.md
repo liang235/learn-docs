@@ -52,3 +52,6 @@
 ## 常见问题
 ### 下载页面打不开，访问无反应
 - 关闭 `vpn` 设置
+
+### 无法登陆 `github`
+https://github.com/521xueweihan/GitHub520

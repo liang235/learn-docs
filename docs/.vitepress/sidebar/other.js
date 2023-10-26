@@ -18,6 +18,7 @@ export default [
 			{ text: 'nrm', link: `${commonPath}/nrm.md` },
 			{ text: 'cnpm', link: `${commonPath}/cnpm.md` },
 			{ text: 'pnpm', link: `${commonPath}/pnpm.md` },
+			{ text: 'homebrew', link: `${commonPath}/homebrew.md` },
 			{ text: 'vscode', link: `${commonPath}/vscode.md` },
 			{ text: 'typora', link: `${commonPath}/typora.md` },
 			{ text: 'idea', link: `${commonPath}/idea.md` },
