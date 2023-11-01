@@ -20,6 +20,7 @@ export default [
 			{ text: 'cnpm', link: `${commonPath}/cnpm.md` },
 			{ text: 'pnpm', link: `${commonPath}/pnpm.md` },
 			{ text: 'homebrew', link: `${commonPath}/homebrew.md` },
+			{ text: 'git', link: `${commonPath}/git.md` },
 			{ text: 'vscode', link: `${commonPath}/vscode.md` },
 			{ text: 'sourcetree', link: `${commonPath}/sourcetree.md` },
 			{ text: 'typora', link: `${commonPath}/typora.md` },

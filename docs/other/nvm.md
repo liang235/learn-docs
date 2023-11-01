@@ -4,6 +4,8 @@
 ## 查看 node 版本
 | 命令        |      作用      |
 | ------------- | :----------- |
+| nvm install xxx | 安装 node 版本 |
+| nvm uninstall xxx | 卸载 node 版本 |
 | nvm ls | 查看可用的 node 版本 |
 | nvm use 18 | 切换 node 版本 |
 | nvm alias default 18 | 设置默认 node 版本 |
