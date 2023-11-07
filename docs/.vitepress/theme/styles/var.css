@@ -2,3 +2,11 @@
 :root {
     --vp-sidebar-width: 320px;
 }
+
+#app .VPDoc.has-aside .content-container{
+    max-width: 800px;
+}
+
+.container .aside-container {
+    width: 300px;
+}

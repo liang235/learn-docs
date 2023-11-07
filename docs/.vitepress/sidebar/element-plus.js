@@ -17,6 +17,7 @@ export default [
 			{ text: 'Input 输入框', link: `${commonPath}/input.md` },
 			{ text: 'Radio 单选框', link: `${commonPath}/radio.md` },
 			{ text: 'Select 选择器', link: `${commonPath}/select.md` },
+			{ text: 'Upload 上传', link: `${commonPath}/upload.md` },
 		],
 	},
 	{
@@ -25,6 +26,7 @@ export default [
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: 'Skeleton 骨架屏', link: `${commonPath}/skeleton.md` },
+			{ text: 'Table 表格', link: `${commonPath}/table.md` },
 			{ text: 'Tree 树形控件', link: `${commonPath}/tree.md` }
 		],
 	},
