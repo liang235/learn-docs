@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"sass": "^1.69.5",
 		"vitepress": "1.0.0-rc.25",
-		"vue": "^3.3.7"
+		"vue": "^3.3.8"
 	},
 	"pnpm": {
 		"peerDependencyRules": {
