@@ -20,6 +20,7 @@
 				<svg-icon name="ele-success-filled" class="el-icon el-icon--upload-success el-icon--circle-check" />
 			</label>
 			<svg-icon name="ele-close" class="el-icon el-icon--close" />
+			<i class="el-icon--close-tip">按 delete 键可删除</i>
 		</li>
 	</ul>
 </template>
