@@ -34,6 +34,7 @@ export default [
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
             { text: 'useClipboard 剪切板', link: `${commonPath}/useClipboard.md` },
+            { text: 'useCssVar 操作 CSS 变量', link: `${commonPath}/useCssVar.md` },
             { text: 'useDark 高亮/暗黑', link: `${commonPath}/useDark.md` },
             { text: 'useImage 图片状态', link: `${commonPath}/useImage.md` },
             { text: 'usePermission 权限', link: `${commonPath}/usePermission.md` },

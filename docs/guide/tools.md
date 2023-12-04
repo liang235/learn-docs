@@ -79,7 +79,7 @@ export function calcAgeBirthDayGender(idCard) {
  * @param {number} decimal - 保留小数位数，默认为2位
  * @returns {string} - 格式化后的金额字符串
  */
-export function formatAmount(amount, separator = ',', decimal = 2) {
+export function formatAmount(amount, separator = ',', decimal = 0) {
     const amountStr = amount.toFixed(decimal).toString(); // 将金额转换为字符串，保留指定的小数位数
 
     // 使用正则表达式和替换函数，在每三位数字之前插入分隔符
