@@ -56,7 +56,7 @@ module.exports = {
 	extends: [
 		'plugin:vue/vue3-essential',
 		'eslint-config-airbnb-base',
-		// eslint-config-prettier 与 eslint-config-prettier 简写配置
+		// eslint-config-prettier 与 eslint-plugin-prettier 简写配置
 		'plugin:prettier/recommended'
 	],
 	overrides: [],
