@@ -16,6 +16,7 @@ export default [
             { text: '搜索关键字高亮', link: `${commonPath}/keyword_highlighting.md` },
             { text: '倒计时', link: `${commonPath}/countdown.md` },
             { text: '无限滚动', link: `${commonPath}/infinite_scroll.md` },
+            { text: '导出多个附件', link: `${commonPath}/export-file.md` },
         ],
     },
 ]

@@ -28,3 +28,8 @@ npm install -g npm-check-updates
 | ncu -u | 升级项目的包文件 |
 | ncu i | 选择可更新包中要更新的包 |
 | ncu -g | ncu 本身不能升级全局包，执行提示的命令即可 |
+
+## 在 node_modules 中查找谁引用了某个库
+```js
+npm ls sockjs-client
+```
