@@ -31,6 +31,7 @@ export default [
 					{ text: 'echarts', link: '/echarts/index', activeMatch: '/echarts/' },
 					{ text: 'markdown', link: '/markdown/index', activeMatch: '/markdown/' },
 					{ text: 'vitepress', link: '/vitepress/index', activeMatch: '/vitepress/' },
+					{ text: 'sortable', link: '/sortable/index', activeMatch: '/sortable/' },
 				],
 			},
 		],

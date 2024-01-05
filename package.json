@@ -11,12 +11,12 @@
 		"preview": "vitepress preview docs --port 9000"
 	},
 	"dependencies": {
-		"medium-zoom": "^1.0.8"
+		"medium-zoom": "^1.1.0"
 	},
 	"devDependencies": {
-		"sass": "^1.69.5",
-		"vitepress": "1.0.0-rc.25",
-		"vue": "^3.3.8"
+		"sass": "^1.69.7",
+		"vitepress": "1.0.0-rc.35",
+		"vue": "^3.4.5"
 	},
 	"pnpm": {
 		"peerDependencyRules": {

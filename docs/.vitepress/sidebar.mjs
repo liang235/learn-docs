@@ -19,4 +19,5 @@ export default {
 	'/create-vite/': require('./sidebar/create-vite.js').default,
 	'/problem/': require('./sidebar/problem.js').default,
 	'/vitepress/': require('./sidebar/vitepress.js').default,
+	'/sortable/': require('./sidebar/sortable.js').default,
 }
