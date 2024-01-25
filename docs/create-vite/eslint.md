@@ -120,7 +120,7 @@ pnpm add eslint-config-prettier eslint-plugin-prettier -D
     extends: [
     'eslint:recommended',
     'plugin:vue/vue3-essential',
-     // eslint-config-prettier 与 eslint-config-prettier 简写配置
+     // eslint-plugin-prettier 和 eslint-config-prettier 简写配置
     'plugin:prettier/recommended'
   ],
 }
