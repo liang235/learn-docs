@@ -20,5 +20,4 @@ export default {
 	'/problem/': require('./sidebar/problem.js').default,
 	'/vitepress/': require('./sidebar/vitepress.js').default,
 	'/sortable/': require('./sidebar/sortable.js').default,
-	'/java/': require('./sidebar/java.js').default,
 }
