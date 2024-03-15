@@ -51,11 +51,6 @@ export default [
 		link: '/javascript/index',
 		activeMatch: '/javascript/'
 	},
-	{
-		text: 'Java',
-		link: '/java/index',
-		activeMatch: '/java/'
-	},
 	// {
 	// 	text: 'TypeScript',
 	// 	link: 'https://ts.xcatliu.com/',
