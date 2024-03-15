@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as r}from"./chunks/framework.nSZ4yS-g.js";const f=JSON.parse('{"title":"文档说明","description":"","frontmatter":{},"headers":[],"relativePath":"guide/index.md","filePath":"guide/index.md"}'),n={name:"guide/index.md"},i=r("",7),o=[i];function d(h,l,p,s,c,_){return t(),a("div",null,o)}const u=e(n,[["render",d]]);export{f as __pageData,u as default};

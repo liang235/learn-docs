@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n,a7 as e}from"./chunks/framework.nSZ4yS-g.js";const g=JSON.parse('{"title":"常见问题","description":"","frontmatter":{},"headers":[],"relativePath":"guide/q-a.md","filePath":"guide/q-a.md"}'),p={name:"guide/q-a.md"},t=n("",10),l=[t];function r(h,k,d,o,c,u){return i(),a("div",null,l)}const b=s(p,[["render",r]]);export{g as __pageData,b as default};

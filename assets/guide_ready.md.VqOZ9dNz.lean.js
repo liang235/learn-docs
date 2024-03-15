@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as r}from"./chunks/framework.nSZ4yS-g.js";const m=JSON.parse('{"title":"准备工作","description":"","frontmatter":{},"headers":[],"relativePath":"guide/ready.md","filePath":"guide/ready.md"}'),i={name:"guide/ready.md"},l=r("",11),s=[l];function n(o,d,c,p,h,u){return t(),a("div",null,s)}const b=e(i,[["render",n]]);export{m as __pageData,b as default};

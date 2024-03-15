@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as t,a4 as r}from"./chunks/framework.nSZ4yS-g.js";const _=JSON.parse('{"title":"IDEA","description":"","frontmatter":{},"headers":[],"relativePath":"other/idea.md","filePath":"other/idea.md"}'),o={name:"other/idea.md"},i=r("",15),n=[i];function h(d,l,s,c,p,m){return t(),e("div",null,n)}const b=a(o,[["render",h]]);export{_ as __pageData,b as default};

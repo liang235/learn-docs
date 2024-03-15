@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as t,a4 as o}from"./chunks/framework.nSZ4yS-g.js";const f=JSON.parse('{"title":"布局","description":"","frontmatter":{},"headers":[],"relativePath":"guide/layout.md","filePath":"guide/layout.md"}'),r={name:"guide/layout.md"},i=o("",7),l=[i];function n(d,h,s,c,_,u){return t(),e("div",null,l)}const p=a(r,[["render",n]]);export{f as __pageData,p as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as n}from"./chunks/framework.nSZ4yS-g.js";const u=JSON.parse('{"title":"cnpm","description":"","frontmatter":{},"headers":[],"relativePath":"other/cnpm.md","filePath":"other/cnpm.md"}'),s={name:"other/cnpm.md"},r=n("",4),o=[r];function c(i,p,l,d,m,h){return t(),a("div",null,o)}const b=e(s,[["render",c]]);export{u as __pageData,b as default};

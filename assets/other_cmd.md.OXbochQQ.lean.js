@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a4 as d}from"./chunks/framework.nSZ4yS-g.js";const f=JSON.parse('{"title":"cmd","description":"","frontmatter":{},"headers":[],"relativePath":"other/cmd.md","filePath":"other/cmd.md"}'),r={name:"other/cmd.md"},o=d("",4),c=[o];function l(s,n,_,h,i,m){return a(),e("div",null,c)}const p=t(r,[["render",l]]);export{f as __pageData,p as default};
