@@ -1,14 +1,21 @@
 # [nvm](https://github.com/nvm-sh/nvm)
 `node` 版本管理器
 
-## 查看 node 版本
+## mac nvm 安装路径
+
+
+## 常用命令
 | 命令        |      作用      |
 | ------------- | :----------- |
-| nvm install xxx | 安装 node 版本 |
+| nvm version | 查看 nvm 版本 |
+| nvm list-remote | 查看可以安装的 node 版本 |
+| nvm install xxx | 安装指定版本的 node |
 | nvm uninstall xxx | 卸载 node 版本 |
-| nvm ls | 查看可用的 node 版本 |
+| nvm ls | 查看已经安装可用的 node 版本 |
 | nvm use 18 | 切换 node 版本 |
 | nvm alias default 18 | 设置默认 node 版本 |
+| nvm list-remote | 查看可以安装的 node 版本 |
+| nvm root | 查看 nvm 安装路径 |
 
 ## 切换 node 版本安装包丢失的问题
 - 一般是全局安装包的路径不对，只安装在了当前 `node` 版本的路径下，切换 `node` 版本之后就丢失了
