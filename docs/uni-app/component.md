@@ -35,6 +35,6 @@ import uniBadge from '@/components/uni-badge/uni-badge.vue';
 ```
 
 ## uni-app 的 easycom
-- 通过 `uni-app` 的 [easycom](easycom): 将组件引入精简为一步。只要组件安装在项目的 `components` 目录下，并符合 components/组件名称/组件名称.vue 目录结构。就可以不用引用、注册，直接在页面中使用
+- 通过 `uni-app` 的 [easycom]([easycom](https://uniapp.dcloud.net.cn/collocation/pages.html#easycom)): 将组件引入精简为一步。只要组件安装在项目的 `components` 目录下，并符合 components/组件名称/组件名称.vue 目录结构。就可以不用引用、注册，直接在页面中使用
 - `easycom` 是自动开启的，不需要手动开启，有需求时可以在 `pages.json` 的 `easycom` 节点进行个性化设置
 - 不管 `components` 目录下安装了多少组件，`easycom` 打包后会自动剔除没有使用的组件，对组件库的使用尤为友好
