@@ -47,6 +47,16 @@ export default [
 		activeMatch: '/vue/'
 	},
 	{
+		text: '小程序',
+		items: [
+			{
+				items: [
+					{ text: 'uni-app', link: '/uni-app/index', activeMatch: '/uni-app/' },
+				],
+			},
+		],
+	},
+	{
 		text: 'JavaScript',
 		link: '/javascript/index',
 		activeMatch: '/javascript/'

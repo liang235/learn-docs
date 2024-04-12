@@ -1,9 +1,15 @@
 /* 侧边栏 */
-:root {
-    --vp-sidebar-width: 320px;
+@media (min-width: 1440px) {
+    #VPContent.VPContent.has-sidebar {
+        padding-right: 0;
+    }
 }
 
-#app .VPDoc.has-aside .content-container{
+#app .VPDoc.has-aside div.content-container {
+    max-width: initial;
+}
+
+#app .VPDoc.has-aside .content-container {
     max-width: 800px;
 }
 
