@@ -18,6 +18,14 @@ watch([name, age], (newVal, oldVal) => {
 watch(props.file, () => {
 	console.log('监听 props 中数据 file')
 })
+
+// 如果监听的是响应式的数据需要 返回该属性的 getter 函数
+watch(
+	() => props.file,
+	() => {
+		console.log('监听 props 中数据 file')
+	}
+)
 ```
 
 ## 监听路由数据

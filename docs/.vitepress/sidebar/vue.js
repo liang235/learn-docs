@@ -17,7 +17,6 @@ export default [
 			{ text: 'defineProps 和 defineEmits', link: `${commonPath}/props_emits.md` },
 			{ text: 'watch 监听', link: `${commonPath}/watch.md` },
 			{ text: ':deep() 样式穿透', link: `${commonPath}/:deep().md` },
-			{ text: 'Class 与 Style 绑定', link: `${commonPath}/class-style-bind.md` },
 			{ text: '全局方法', link: `${commonPath}/global.md` },
 			{ text: '异步组件', link: `${commonPath}/async-components.md` },
 		],

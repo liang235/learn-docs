@@ -4,6 +4,7 @@
 ├─ components                   uni-app 组件目录
 ├─ pages                        uni-app 页面目录
 ├─ static                       静态文件目录
+├─ uni_modules                  uni-app 扩展组件
 ├─ unpackage                    用于存放我们打包后的项目文件
 ├─ utils                        工具类目录
 ├─ App.vue                      应用配置，用来配置小程序的全局样式、生命周期函数等

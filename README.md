@@ -6,3 +6,6 @@
 - pnpm run dev 本地开发
 - pnpm run build 打包文件
 - pnpm run serve 本地预览打包文件
+
+## 图片缩放
+<ZoomImg src="/name.png" />
