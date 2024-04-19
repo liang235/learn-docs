@@ -20,6 +20,8 @@ export default [
 			{ text: '常用 api', link: `${commonPath}/api.md` },
 			{ text: '事件映射表', link: `${commonPath}/incident.md` },
 			{ text: '环境变量', link: `${commonPath}/env-variable.md` },
+			{ text: '插件市场', link: `${commonPath}/plugins.md` },
+			{ text: '项目优化', link: `${commonPath}/optimize.md` },
 		],
 	},
 	{

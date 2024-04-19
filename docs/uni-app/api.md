@@ -22,6 +22,8 @@
 | [uni.getMenuButtonBoundingClientRect()](https://uniapp.dcloud.net.cn/api/ui/menuButton.html#getmenubuttonboundingclientrect) | 如果原生导航栏被隐藏，仍然在右上角会有一个悬浮按钮，微信下也被称为胶囊按钮 |
 | [uni.chooseAddress()](https://uniapp.dcloud.net.cn/api/other/choose-address.html#chooseaddress)                              | 获取用户收货地址                                                           |
 | [uni.makePhoneCall()](https://uniapp.dcloud.net.cn/api/system/phone.html#makephonecall)                                      | 拨打电话                                                                   |
+| [uni.saveImageToPhotosAlbum()](https://uniapp.dcloud.net.cn/api/media/image.html#saveimagetophotosalbum)                     | 保存图片到系统相册                                                         |
+| [uni.openSetting()](https://uniapp.dcloud.net.cn/api/other/setting.html#opensetting)                                         | 调起客户端小程序设置界面，返回用户设置的操作结果                           |
 | [getCurrentPages()](https://uniapp.dcloud.net.cn/tutorial/page.html#getcurrentpages)                                         | 获取当前页面栈的实例                                                       |
 
 ## 常用属性
