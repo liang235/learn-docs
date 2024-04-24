@@ -16,7 +16,7 @@
 				"browser": "chrome", // 运行到的目标浏览器，仅当 UNI_PLATFORM 为h5时有效
 				"env": { // 环境变量
 					"UNI_PLATFORM": "h5", // 基准平台
-                    "NODE_ENV_NAME": "development" // 开发环境
+                    "ENV_TYPE": "development" // 开发环境
 				},
 				"define": { // 自定义条件编译
 					"CUSTOM-CONST": true // 自定义条件编译常量，建议为大写
@@ -27,7 +27,7 @@
 				"browser": "chrome",
 				"env": {
 					"UNI_PLATFORM": "h5",
-                    "NODE_ENV_NAME": "test"
+                    "ENV_TYPE": "test"
 				},
 				"define": {
 					"CUSTOM-CONST": true,
@@ -38,7 +38,7 @@
 				"browser": "chrome",
 				"env": {
 					"UNI_PLATFORM": "h5",
-                    "NODE_ENV_NAME": "production"
+                    "ENV_TYPE": "production"
 				},
 				"define": {
 					"CUSTOM-CONST": true
@@ -49,7 +49,7 @@
 }
 ```
 
-- 上面代码片段只以 `H5` 端为例，其中只增加了常量 `NODE_ENV_NAME` 用于区分当前环境地址，类似于 `process.env.NODE_ENV` 获取环境变量的作用。一般小程序也就测试和生产两个环境，环境太多都要重新申请账号也麻烦。`H5` 按照常规的配置本地开发、测试、生产三个环境。配置好后我们点击顶部菜单栏的“运行”和“发行”即可看到效果
+- 上面代码片段只以 `H5` 端为例，其中只增加了常量 `ENV_TYPE` 用于区分当前环境地址，类似于 `process.env.NODE_ENV` 获取环境变量的作用。一般小程序也就测试和生产两个环境，环境太多都要重新申请账号也麻烦。`H5` 按照常规的配置本地开发、测试、生产三个环境。配置好后我们点击顶部菜单栏的“运行”和“发行”即可看到效果
 <ZoomImg src="/env-variable-1.png" />
 <ZoomImg src="/env-variable-2.png" />
 
@@ -77,12 +77,12 @@ export default {
 }
 ```
 
-- 其中变量对象名称 `development`、`test`、`production` 要和 `package.json` 文件中定义的NAME保持一致，方便后续通过对象方式直接取值。变量对象中添加的是需要根据不同环境配置的变量，比如后端服务请求地址，小程序 `appid` 和一些别的插件 `key`。配置后我们就可以配合环境 `NODE_ENV_NAME` 获取到不同环境的其他变量了，简单使用方式如下：
+- 其中变量对象名称 `development`、`test`、`production` 要和 `package.json` 文件中定义的NAME保持一致，方便后续通过对象方式直接取值。变量对象中添加的是需要根据不同环境配置的变量，比如后端服务请求地址，小程序 `appid` 和一些别的插件 `key`。配置后我们就可以配合环境 `ENV_TYPE` 获取到不同环境的其他变量了，简单使用方式如下：
 
 ```js
 import ENV_CONFIG from '@/config/env.js'
 // 运行H5 开发环境结果 http://development
-console.log(ENV_CONFIG[process.env.NODE_ENV_NAME].BASE_API_URL)
+console.log(ENV_CONFIG[process.env.ENV_TYPE].BASE_API_URL)
 ```
 
 - 每次引入获取方式肯定不够友好，在 `uni-app` 中还可以通过修改 `vite` 配置添加全局变量，更方便在全局使用
@@ -104,7 +104,7 @@ export default defineConfig({
 - 通过定义一个全局变量 `process.env.config`，赋值为 `ENV_CONFIG`，`process.env.config` 可以改为任何一个字符串，这里主要是为了保持和默认通过 `process.env` 获取环境变量的语义一致性。此时使用时就无需在业务中单独引入，从全局对象c`process.env.config` 上取值即可：
 ```js
 // 运行H5 开发环境结果 http://development
-console.log(process.env.config[process.env.NAME].BASE_API_URL)
+console.log(process.env.config[process.env.ENV_TYPE].BASE_API_URL)
 ```
 
 ## 动态修改小程序 appid
@@ -139,15 +139,18 @@ function replaceManifest(path, value) {
 }
 
 // 这是我们主要注意动态修改的地方,按自己的需求配置
-const appid = ENV_CONFIG[JSON.parse(process.env.UNI_CUSTOM_DEFINE).NODE_ENV_NAME].appid
-replaceManifest('mp-weixin.appid', appid)
+let BASE_API_URL = ''
+if (process.env.UNI_CUSTOM_DEFINE) {
+	const appid = ENV_CONFIG[JSON.parse(process.env.UNI_CUSTOM_DEFINE).ENV_TYPE].appid
+	replaceManifest('mp-weixin.appid', appid)
+}
 fs.writeFileSync(manifestPath, Manifest, { flag: 'w' })
 ```
 
 - 这个修改方案是根据[官方提供的代码片段](https://uniapp.dcloud.net.cn/collocation/vite-config.html)修改，其中进行了一些变动：
   - `manifest.json` 文件路径由相对路径改为 `__dirname` 获取的绝对路径
   - `replaceManifest` 方法中的 `value` 进行了 `typeof` 类型判断，如果是字符串加上双引号。因为测试时传个字符串会替换成没引号的变量或者数字
-- 同时关于当前环境变量的获取，此时通过 `process.env.NODE_ENV_NAME` 是获取不到 `package.json` 配置的 `NODE_ENV_NAME` 的，通过打印 `process.env` 可以发现此时它是个包含很多变量的 `json`，在 `UNI_CUSTOM_DEFINE` 下面是可以找到 `NODE_ENV_NAME`，这样就能根据不同环境获取不同的 `appid`
+- 同时关于当前环境变量的获取，此时通过 `process.env.ENV_TYPE` 是获取不到 `package.json` 配置的 `ENV_TYPE` 的，通过打印 `process.env` 可以发现此时它是个包含很多变量的 `json`，在 `UNI_CUSTOM_DEFINE` 下面是可以找到 `ENV_TYPE`，这样就能根据不同环境获取不同的 `appid`
 
 <ZoomImg src="/env-variable-3.png" />
 
@@ -171,7 +174,7 @@ fs.writeFileSync(manifestFileUrl, JSON.stringify(manifestFileDataObj), { encodin
 
 ## 使用方式
 - 需要本地调试时，点击工具栏“运行”，选择自定义的对应开发或测试环境
-- 业务中通过 `process.env.config[process.env.NODE_ENV_NAME]` 获取配置的变量对象
+- 业务中通过 `process.env.config[process.env.ENV_TYPE]` 获取配置的变量对象
 - 上线时，点击工具栏“发行”，选择自定义的对应测试或生产环境
 
 ## 参考
