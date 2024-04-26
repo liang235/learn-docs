@@ -5,7 +5,10 @@ export default [
 		text: 'uni-app',
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
-		items: [{ text: '介绍', link: `${commonPath}/index.md` }],
+		items: [
+			{ text: '介绍', link: `${commonPath}/index.md` },
+			{ text: '常见问题', link: `${commonPath}/problem.md` }
+		],
 	},
 	{
 		text: '基础知识',
@@ -21,6 +24,7 @@ export default [
 			{ text: '事件映射表', link: `${commonPath}/incident.md` },
 			{ text: '环境变量', link: `${commonPath}/env-variable.md` },
 			{ text: '插件市场', link: `${commonPath}/plugins.md` },
+			{ text: '主题样式', link: `${commonPath}/uni-sass.md` },
 			{ text: '项目优化', link: `${commonPath}/optimize.md` },
 		],
 	},
