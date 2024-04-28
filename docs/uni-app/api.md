@@ -24,10 +24,11 @@
 | [uni.makePhoneCall()](https://uniapp.dcloud.net.cn/api/system/phone.html#makephonecall)                                      | 拨打电话                                                                   |
 | [uni.saveImageToPhotosAlbum()](https://uniapp.dcloud.net.cn/api/media/image.html#saveimagetophotosalbum)                     | 保存图片到系统相册                                                         |
 | [uni.openSetting()](https://uniapp.dcloud.net.cn/api/other/setting.html#opensetting)                                         | 调起客户端小程序设置界面，返回用户设置的操作结果                           |
-| [getCurrentPages()](https://uniapp.dcloud.net.cn/tutorial/page.html#getcurrentpages)                                         | 获取当前页面栈的实例                                                       |
+| [uni.setClipboardData()](https://uniapp.dcloud.net.cn/api/system/clipboard.html#setclipboarddata)                            | 复制剪贴板的内容                                                           |
 
 ## 常用属性
-| 属性名                                                                     | 说明                                                                |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [getApp()](https://uniapp.dcloud.net.cn/tutorial/page.html#getapp)         | 用于获取当前应用实例，一般用于获取 globalData                       |
-| [globalData](https://uniapp.dcloud.net.cn/collocation/App.html#globaldata) | 这是一种简单的 `全局变量` 机制，并且全端通用，一般设置在 App 页面中 |
+| 属性名                                                                               | 说明                                                                |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| [getApp()](https://uniapp.dcloud.net.cn/tutorial/page.html#getapp)                   | 用于获取当前应用实例，一般用于获取 globalData                       |
+| [globalData](https://uniapp.dcloud.net.cn/collocation/App.html#globaldata)           | 这是一种简单的 `全局变量` 机制，并且全端通用，一般设置在 App 页面中 |
+| [getCurrentPages()](https://uniapp.dcloud.net.cn/tutorial/page.html#getcurrentpages) | 获取当前页面栈的实例                                                |
