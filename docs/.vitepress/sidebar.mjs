@@ -21,4 +21,5 @@ export default {
 	'/vitepress/': require('./sidebar/vitepress.js').default,
 	'/sortable/': require('./sidebar/sortable.js').default,
 	'/uni-app/': require('./sidebar/uni-app.js').default,
+	'/uview/': require('./sidebar/uview.js').default,
 }
