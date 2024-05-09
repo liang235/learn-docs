@@ -32,7 +32,7 @@ export default [
 					{ text: 'markdown', link: '/markdown/index', activeMatch: '/markdown/' },
 					{ text: 'vitepress', link: '/vitepress/index', activeMatch: '/vitepress/' },
 					{ text: 'sortable', link: '/sortable/index', activeMatch: '/sortable/' },
-					{ text: 'uView', link: '/uview/index', activeMatch: '/uview/' },
+					{ text: 'uview-plus', link: '/uview-plus/index', activeMatch: '/uview-plus/' },
 				],
 			},
 		],

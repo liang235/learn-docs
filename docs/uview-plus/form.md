@@ -35,3 +35,15 @@ const formRules = ref({
 })
 </script>
 ```
+
+## 常见问题
+表单验证 `trigger` 为 `change` 的时候刚进入页面就报错
+```js
+// 监听页面初次渲染完成
+onReady(() => {
+	// 解决刚进入页面就校验报错的问题
+	nextTick(() => {
+		formRef.value.clearValidate()
+	})
+})
+```
