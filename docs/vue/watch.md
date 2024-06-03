@@ -37,3 +37,18 @@ watch(
 	}
 )
 ```
+
+## 深度监听
+```js
+// 监听 ref 单个数据
+watch(
+	formData,
+	(newVal, oldVal) => {
+		console.log('name变化了：', newVal, oldVal)
+	},
+	{
+		immediate: true, // 在侦听器创建时立即触发回调
+		deep: true, // 开启深度监听
+	}
+)
+```

@@ -11,7 +11,7 @@
 - 从 Gitee 克隆
 ```
 # 拉取框架源码
-git clone https://gitee.com/show-charm/project_web.git
+git@gitee.com:cdl235/project-admin.git
 ```
 
 ## 开发环境
