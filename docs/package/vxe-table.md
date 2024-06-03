@@ -26,4 +26,4 @@ function useTable (app: App) {
 createApp(App).use(useTable).mount('#app')
 ```
 
-## 按需引入请参考 [vite-plugin-style-import](../devDependencies/vite-plugin-style-import.md)
+## 按需引入请参考 [vite-plugin-style-import](./vite-plugin-style-import.md)
