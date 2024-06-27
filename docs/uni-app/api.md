@@ -1,10 +1,12 @@
 # [API 概述](https://uniapp.dcloud.net.cn/api/)
+
 `uni-app` 的 js API 由标准 ECMAScript 的 js API 和 uni 扩展 API 这两部分组成
 
 ## 常用 API
 
 | 函数名                                                                                                                       | 说明                                                                       |
 | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [uni.getSystemInfoSync()](https://uniapp.dcloud.net.cn/api/system/info.html#getsysteminfosync)                               | 获取系统信息的同步接口                                                     |
 | [uni.request()](https://uniapp.dcloud.net.cn/api/request/request.html#request)                                               | 发起网络请求                                                               |
 | [uni.showLoading()](https://uniapp.dcloud.net.cn/api/ui/prompt.html#showloading)                                             | 显示 loading 提示框, 需主动调用 uni.hideLoading 才能关闭提示框             |
 | [uni.hideLoading()](https://uniapp.dcloud.net.cn/api/ui/prompt.html#hideloading)                                             | 隐藏 loading 提示框                                                        |
@@ -15,7 +17,6 @@
 | [uni.setNavigationBarTitle()](https://uniapp.dcloud.net.cn/api/ui/navigationbar.html#setnavigationbartitle)                  | 动态设置当前页面的标题                                                     |
 | [uni.switchTab()](https://uniapp.dcloud.net.cn/api/router.html#switchtab)                                                    | 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面                           |
 | [uni.navigateBack()](https://uniapp.dcloud.net.cn/api/router.html#navigateback)                                              | 关闭当前页面，返回上一页面或多级页面                                       |
-| [uni.getSystemInfoSync()](https://uniapp.dcloud.net.cn/api/system/info.html#getsysteminfosync)                               | 获取系统信息的同步接口                                                     |
 | [uni.login()](https://uniapp.dcloud.net.cn/api/plugins/login.html#login)                                                     | 统一封装了各个平台的各种常见的登录方式                                     |
 | [uni.$emit()](https://uniapp.dcloud.net.cn/tutorial/page.html#emit)                                                          | 触发全局的自定义事件                                                       |
 | [uni.$on()](https://uniapp.dcloud.net.cn/tutorial/page.html#on)                                                              | 监听全局的自定义事件。事件可以由 uni.$emit 触发                            |
@@ -25,8 +26,10 @@
 | [uni.saveImageToPhotosAlbum()](https://uniapp.dcloud.net.cn/api/media/image.html#saveimagetophotosalbum)                     | 保存图片到系统相册                                                         |
 | [uni.openSetting()](https://uniapp.dcloud.net.cn/api/other/setting.html#opensetting)                                         | 调起客户端小程序设置界面，返回用户设置的操作结果                           |
 | [uni.setClipboardData()](https://uniapp.dcloud.net.cn/api/system/clipboard.html#setclipboarddata)                            | 复制剪贴板的内容                                                           |
+| [uni.getLaunchOptionsSync()](https://uniapp.dcloud.net.cn/api/getLaunchOptionsSync.html#getlaunchoptionssync)                | 获取启动时的参数。返回值与 App.onLaunch 的回调参数一致                     |
 
 ## 常用属性
+
 | 属性名                                                                               | 说明                                                                |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | [getApp()](https://uniapp.dcloud.net.cn/tutorial/page.html#getapp)                   | 用于获取当前应用实例，一般用于获取 globalData                       |
