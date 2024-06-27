@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n}from"./chunks/framework.DqHORQeI.js";const o=JSON.parse('{"title":"watch 监听","description":"","frontmatter":{},"headers":[],"relativePath":"vue/watch.md","filePath":"vue/watch.md"}'),l={name:"vue/watch.md"},p=n("",9),e=[p];function h(t,k,r,E,d,c){return i(),a("div",null,e)}const b=s(l,[["render",h]]);export{o as __pageData,b as default};

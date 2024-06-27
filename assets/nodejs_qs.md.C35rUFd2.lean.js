@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n}from"./chunks/framework.DqHORQeI.js";const g=JSON.parse('{"title":"qs","description":"","frontmatter":{},"headers":[],"relativePath":"nodejs/qs.md","filePath":"nodejs/qs.md"}'),e={name:"nodejs/qs.md"},l=n("",9),p=[l];function t(r,h,k,d,c,o){return i(),a("div",null,p)}const b=s(e,[["render",t]]);export{g as __pageData,b as default};
