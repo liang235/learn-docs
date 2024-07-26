@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a4 as e}from"./chunks/framework.DqHORQeI.js";const b=JSON.parse('{"title":"nvm","description":"","frontmatter":{},"headers":[],"relativePath":"other/nvm.md","filePath":"other/nvm.md"}'),i={name:"other/nvm.md"},t=e("",10),l=[t];function p(r,d,h,o,c,k){return a(),n("div",null,l)}const u=s(i,[["render",p]]);export{b as __pageData,u as default};
