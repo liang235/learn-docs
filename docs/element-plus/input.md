@@ -16,3 +16,8 @@ handlerDialog(event, type) {
     if (event.target.nodeName != 'INPUT') return;
 }
 ```
+
+## 后缀图标绑定点击事件
+```
+
+```
