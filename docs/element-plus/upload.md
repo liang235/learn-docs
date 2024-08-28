@@ -1,5 +1,68 @@
 # [Upload 上传](https://element-plus.gitee.io/zh-CN/component/upload.html)
 
+## 点击事件不在 upload 中触发选文件
+::: code-group
+
+```vue [Vue3 + ElementPlus]
+<el-button type="primary" size="default" @click="handleUpload">上传</el-button>
+<el-upload style="display: none" ref="uploadRef" action="" :auto-upload="false" :show-file-list="false"></el-upload>
+
+
+<script setup>
+const fileList = ref([]);
+const uploadRef = ref(null);
+
+const handleUpload = () => {
+	uploadRef.value.$el.querySelector('input').click();
+};
+</script>
+```
+
+```vue [Vue2 + ElementUI]
+<el-button @click="handleReport">上传</el-button>
+<el-upload
+	ref="refUpload"
+	style="display: none;"
+	action=""
+	:http-request="doFileUpload"
+	:multiple="false"
+	:show-file-list="false"
+	:before-upload="beforeUpload"
+>
+	<el-button plain size="small" type="primary">上传正文</el-button>
+</el-upload>
+
+handleReport() {
+	this.$refs['refUpload'].$refs['upload-inner'].handleClick()
+},
+beforeUpload(file) {
+	const name = useExtractLastIndexOf(file.name, '.').right
+	if (name !== 'docx' && name !== 'doc' && name !== 'word') {
+	this.$message.error('请上传 word 文件')
+	return false
+	}
+},
+doFileUpload(param) {
+	const formData = new FormData()
+	const formFields = {
+		file: param.file,
+		_PK_: this.$parent.cardData._PK_,
+		SERV_ID: 'OA_GW',
+		DATA_ID: this.$parent.cardData._PK_
+	}
+
+	for (const key in formFields) {
+		formData.append(key, formFields[key])
+	}
+
+	this.$api.doAct('SY_DOCS_CENTER_PLATFORM', 'addFile', formData).then(res => {
+		console.log(res)
+	})
+}
+```
+
+:::
+
 ## 自定义附件列表
 ```vue
 // show-file-list 是否显示已上传文件列表
