@@ -5,7 +5,11 @@ export default [
 		text: 'JavaScript',
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
-		items: [{ text: '介绍', link: `${commonPath}/index.md` }],
+		items: [
+			{ text: '介绍', link: `${commonPath}/index.md` },
+			{ text: 'useTools', link: `${commonPath}/useTools.md` },
+			{ text: 'useDateTools', link: `${commonPath}/useDateTools.md` },
+		],
 	},
 	{
 		text: '基础知识',
@@ -13,7 +17,6 @@ export default [
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
 			{ text: '需求实现', link: `${commonPath}/case.md` },
-			{ text: '工具方法', link: `${commonPath}/tools.md` },
 			{ text: '数组方法', link: `${commonPath}/array.md` },
 			{ text: '对象方法', link: `${commonPath}/object.md` },
 			{ text: '解构赋值', link: `${commonPath}/destructuring.md` },

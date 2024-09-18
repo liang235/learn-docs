@@ -23,3 +23,48 @@ const { appContext } = getCurrentInstance()
 const globalProxy = appContext.config.globalProperties
 globalProxy.openLoading()
 ```
+
+## 点击 loading 背景关闭
+```vue
+<template>
+	<el-button v-loading.fullscreen.lock="fullscreenLoading" type="primary" @click="openFullScreen1">指令方式</el-button>
+	<el-button type="primary" @click="openFullScreen2">服务方式</el-button>
+</template>
+
+<script setup>
+import { ElLoading } from 'element-plus'
+
+const fullscreenLoading = ref(false)
+
+const openFullScreen1 = async () => {
+	fullscreenLoading.value = true
+
+	await nextTick() // 等待 DOM 更新
+	const loadingMask = document.querySelector('.el-loading-mask')
+	if (loadingMask) {
+		loadingMask.addEventListener('click', () => {
+			fullscreenLoading.value = false
+		})
+	}
+	setTimeout(() => {
+		fullscreenLoading.value = false
+	}, 50000)
+}
+
+const openFullScreen2 = () => {
+	const loading = ElLoading.service({
+		lock: true,
+		text: 'Loading',
+		spinner: 'el-icon-loading',
+		background: 'rgba(0, 0, 0, 0.7)',
+	})
+
+	document.querySelector('.el-loading-mask').addEventListener('click', () => {
+		loading.close()
+	})
+	setTimeout(() => {
+		loading.close()
+	}, 50000)
+}
+</script>
+```
