@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.DqHORQeI.js";const F=JSON.parse('{"title":"三角形","description":"","frontmatter":{},"headers":[],"relativePath":"css/triangle.md","filePath":"css/triangle.md"}'),l={name:"css/triangle.md"},p=n("",2),h=[p];function k(t,e,r,E,d,g){return a(),i("div",null,h)}const C=s(l,[["render",k]]);export{F as __pageData,C as default};
