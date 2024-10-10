@@ -17,7 +17,50 @@ handlerDialog(event, type) {
 }
 ```
 
-## 后缀图标绑定点击事件
-```
+## 文字过长...，鼠标滑入显示全部内容
+```vue
+<template>
+    <el-tooltip :disabled="isShowTooltip" placement="top">
+        <template #content>
+            {{ input }}
+        </template>
+        <el-input
+            style="width: 240px"
+            class="text-ellipsis"
+            v-model="input"
+            disabled
+            placeholder="Please input"
+            @mouseenter="onMouseenter($event)"
+            @mouseleave="isShowTooltip = false"
+        />
+    </el-tooltip>
+</template>
 
+<script setup>
+const input = ref('事件添加阻止事件添加阻止事件添加阻止')
+const isShowTooltip = ref(false) // Tooltip 文字提示状态
+
+/**
+ * @description: 鼠标移入
+ * @param {*} event
+ * @return {*}
+ */
+const onMouseenter = (event) => {
+    // 获取 el-input__inner 元素
+    const inputInner = event.currentTarget.querySelector('.el-input__inner')
+    isShowTooltip.value = inputInner.scrollWidth <= inputInner.clientWidth
+}
+</script>
+
+<style lang="scss" scoped>
+:deep() {
+    .text-ellipsis {
+        .el-input__inner {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+</style>
 ```
