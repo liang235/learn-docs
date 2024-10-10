@@ -1,5 +1,31 @@
 # 组件通信
 
+## 子组件给父组件传值
+- 子组件使用 `this.$emit('事件名', 参数)` 触发事件，父组件使用 `@事件名="方法名"` 监听事件
+::: code-group
+
+```vue [父组件]
+<template>
+	<Child @todoSelectionChange="todoSelectionChange"></Child>
+</template>
+
+<script setup>
+import Child from "./Child.vue"
+
+const todoSelectionChange = (val) => {
+	console.log(val)
+}
+</script>
+```
+
+```js [子组件]
+handleSelectionChange(val) {
+	this.$emit('todoSelectionChange', val)
+}
+```
+:::
+
+
 ## 爷孙组件通信
 
 使用 [provide/inject](https://cn.vuejs.org/api/options-composition.html#provide) 来完成
@@ -31,6 +57,7 @@ const money = ref(2000)
 const moneyInfo = inject("moneyInfo")
 </script>
 ```
+:::
 
 ### 无法获取到实时更新的数据
 
