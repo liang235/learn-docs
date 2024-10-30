@@ -64,3 +64,16 @@ const onMouseenter = (event) => {
 }
 </style>
 ```
+
+## 输入校验
+
+### 输入为数字且必须大于0
+```vue
+<el-input v-model="scope.row.IN_NUM" oninput="value=value.replace(/^0|[^0-9]/g,'')" />
+```
+
+
+
+
+
+

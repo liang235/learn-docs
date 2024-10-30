@@ -1,5 +1,8 @@
 # [Upload 上传](https://element-plus.gitee.io/zh-CN/component/upload.html)
 
+## 设置 :multiple="false" 无效
+- `multiple` 属性虽然是 `Boolean` 类型的，但不能将其值设置为 `true` 或者 `false` ！！！
+
 ## 点击事件不在 upload 中触发选文件
 ::: code-group
 
