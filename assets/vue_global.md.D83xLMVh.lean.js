@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n,ae as l}from"./chunks/framework.DqHORQeI.js";const b=JSON.parse('{"title":"全局方法","description":"","frontmatter":{},"headers":[],"relativePath":"vue/global.md","filePath":"vue/global.md"}'),p={name:"vue/global.md"},e=n("",6),t=[e];function h(k,r,E,d,g,c){return a(),i("div",null,t)}const y=s(p,[["render",h]]);export{b as __pageData,y as default};

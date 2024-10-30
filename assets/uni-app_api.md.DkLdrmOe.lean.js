@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a4 as r}from"./chunks/framework.DqHORQeI.js";const f=JSON.parse('{"title":"API 概述","description":"","frontmatter":{},"headers":[],"relativePath":"uni-app/api.md","filePath":"uni-app/api.md"}'),n={name:"uni-app/api.md"},d=r("",6),o=[d];function i(p,l,h,u,s,c){return a(),e("div",null,o)}const b=t(n,[["render",i]]);export{f as __pageData,b as default};
