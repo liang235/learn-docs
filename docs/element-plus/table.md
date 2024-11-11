@@ -1,6 +1,15 @@
 # [Table 表格](https://element-plus.org/zh-CN/component/table.html)
 用于展示多条结构类似的数据， 可对数据进行排序、筛选、对比或其他自定义操作
 
+## selection 是否可以选中
+```vue
+<el-table-column type="selection" :selectable="selectable" />
+
+selectable(row) {
+    return row.M_STATUS === 1
+}
+```
+
 ## tabs+table 实现选项切换
 - 使用一套 `table` 展示多个选项的数据
 ```vue
