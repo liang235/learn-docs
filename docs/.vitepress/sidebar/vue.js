@@ -12,6 +12,7 @@ export default [
 		collapsible: false, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
+			{ text: "常用技巧", link: `${commonPath}/common.md` },
 			{ text: "组件通信", link: `${commonPath}/parameter-passing.md` },
 			{
 				text: "getCurrentInstance",

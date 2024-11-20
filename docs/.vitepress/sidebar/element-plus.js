@@ -12,6 +12,7 @@ export default [
 		collapsible: true, // 是否可折叠的侧边栏组
 		collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
 		items: [
+			{ text: 'DatePicker 日期选择器', link: `${commonPath}/date-picker.md.md` },
 			{ text: 'Cascader 级联选择器', link: `${commonPath}/cascader.md` },
 			{ text: 'Form 表单', link: `${commonPath}/form.md` },
 			{ text: 'Input 输入框', link: `${commonPath}/input.md` },

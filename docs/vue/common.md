@@ -1,0 +1,20 @@
+# 常用技巧
+
+## template 中使用 css 变量
+```vue
+<div :iconStyle="{ color: 'var(--u-primary)' }"></div>
+```
+
+## css 变量转换数值
+```vue
+:root {
+	 --rh-margin-large: 24px;
+}
+
+computed: {
+	rhMarginLarge() {
+	  	const rhMarginLarge = getComputedStyle(document.documentElement).getPropertyValue('--rh-margin-large')
+	  	return parseFloat(rhMarginLarge)
+	}
+}
+```

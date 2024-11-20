@@ -18,12 +18,12 @@ const queryByMulfn = () => {
 
 ```vue [vue2]
 <script>
-import loadsh from 'lodash'
+import lodash from 'lodash'
 
 export default {
     data() {
         return {
-            refreshTodo: loadsh.debounce(this._freshTodo, 1000, { maxWait: 1000 })
+            refreshTodo: lodash.debounce(this._freshTodo, 1000, { maxWait: 1000 })
         }
     },
     methods: {
@@ -33,13 +33,11 @@ export default {
         _freshTodo() {
             console.log('逻辑处理')
         },
-
     }
 }
 </>
 
 <style lang="scss" scoped></style>
-
 ```
 
 :::
