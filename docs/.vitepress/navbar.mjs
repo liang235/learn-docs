@@ -43,6 +43,11 @@ export default [
 		activeMatch: '/problem/'
 	},
 	{
+		text: '工具',
+		link: '/tools/index',
+		activeMatch: '/tools/'
+	},
+	{
 		text: 'Vue',
 		link: '/vue/index',
 		activeMatch: '/vue/'

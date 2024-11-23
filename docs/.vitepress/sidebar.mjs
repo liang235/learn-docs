@@ -22,4 +22,5 @@ export default {
 	'/sortable/': require('./sidebar/sortable.js').default,
 	'/uni-app/': require('./sidebar/uni-app.js').default,
 	'/uview-plus/': require('./sidebar/uview-plus.js').default,
+	'/tools/': require('./sidebar/tools.js').default,
 }
