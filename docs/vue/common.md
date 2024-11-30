@@ -12,9 +12,9 @@
 }
 
 computed: {
-	rhMarginLarge() {
-	  	const rhMarginLarge = getComputedStyle(document.documentElement).getPropertyValue('--rh-margin-large')
-	  	return parseFloat(rhMarginLarge)
+	rhMarginBase() {
+	  	const rhMarginBase = getComputedStyle(document.documentElement).getPropertyValue('--rh-margin-base')
+	  	return parseFloat(rhMarginBase)
 	}
 }
 ```
