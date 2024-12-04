@@ -7,6 +7,19 @@
 <el-input v-model="name" @click.native="handler"></el-input>
 ```
 
+## 绑定回车事件
+::: code-group
+
+```vue [vue3]
+
+```
+
+```vue [vue2]
+<el-input v-model="keywords" @keyup.enter.native="onSearch" />
+```
+
+:::
+
 ## clear 事件不触发 click 事件
 ```js
 // 给 clear 事件添加阻止事件冒泡修饰符即可

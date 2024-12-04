@@ -8,13 +8,18 @@
 ## css 变量转换数值
 ```vue
 :root {
-	 --rh-margin-large: 24px;
+	 --margin-large: 24px;
 }
 
 computed: {
-	rhMarginBase() {
-	  	const rhMarginBase = getComputedStyle(document.documentElement).getPropertyValue('--rh-margin-base')
-	  	return parseFloat(rhMarginBase)
+	marginBase() {
+	  	const marginBase = getComputedStyle(document.documentElement).getPropertyValue('--margin-base')
+	  	return parseFloat(marginBase)
 	}
 }
+```
+
+## css 变量使用负数
+```scss
+left: calc(-1 * var(--margin-base));
 ```
