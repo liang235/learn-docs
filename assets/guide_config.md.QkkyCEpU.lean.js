@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as e,a4 as n}from"./chunks/framework.DqHORQeI.js";const b=JSON.parse('{"title":"配置","description":"","frontmatter":{},"headers":[],"relativePath":"guide/config.md","filePath":"guide/config.md"}'),i={name:"guide/config.md"},l=n("",13),t=[l];function p(r,d,c,o,h,k){return e(),a("div",null,t)}const m=s(i,[["render",p]]);export{b as __pageData,m as default};

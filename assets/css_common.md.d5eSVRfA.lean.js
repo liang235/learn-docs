@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n}from"./chunks/framework.DqHORQeI.js";const b=JSON.parse('{"title":"常用样式","description":"","frontmatter":{},"headers":[],"relativePath":"css/common.md","filePath":"css/common.md"}'),e={name:"css/common.md"},l=n("",6),p=[l];function t(r,h,c,o,d,k){return i(),a("div",null,p)}const m=s(e,[["render",t]]);export{b as __pageData,m as default};

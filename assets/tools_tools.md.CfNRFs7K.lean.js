@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.DqHORQeI.js";const y=JSON.parse('{"title":"tools","description":"","frontmatter":{},"headers":[],"relativePath":"tools/tools.md","filePath":"tools/tools.md"}'),t={name:"tools/tools.md"},h=n("",4),l=[h];function k(p,e,r,d,E,o){return a(),i("div",null,l)}const c=s(t,[["render",k]]);export{y as __pageData,c as default};
