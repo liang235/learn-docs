@@ -13,6 +13,8 @@ export default [
         collapsed: false, // 是否展开侧边栏组，默认展开，设置为 true 为隐藏
         items: [
             { text: 'tools', link: `${commonPath}/tools.md` },
+            { text: 'date', link: `${commonPath}/date.md` },
+            { text: 'regexp', link: `${commonPath}/regexp.md` },
         ],
     },
 ]
