@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as h}from"./chunks/framework.DqHORQeI.js";const y=JSON.parse('{"title":"RegExp","description":"","frontmatter":{},"headers":[],"relativePath":"tools/regexp.md","filePath":"tools/regexp.md"}'),t={name:"tools/regexp.md"},k=h("",6),n=[k];function e(l,p,r,d,g,F){return a(),i("div",null,n)}const o=s(t,[["render",e]]);export{y as __pageData,o as default};

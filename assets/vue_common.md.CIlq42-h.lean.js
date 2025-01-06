@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n}from"./chunks/framework.DqHORQeI.js";const u=JSON.parse('{"title":"常用技巧","description":"","frontmatter":{},"headers":[],"relativePath":"vue/common.md","filePath":"vue/common.md"}'),e={name:"vue/common.md"},t=n("",7),l=[t];function p(h,r,c,k,d,E){return i(),a("div",null,l)}const m=s(e,[["render",p]]);export{u as __pageData,m as default};

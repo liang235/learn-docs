@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a4 as o}from"./chunks/framework.DqHORQeI.js";const d=JSON.parse('{"title":"ApiFox","description":"","frontmatter":{},"headers":[],"relativePath":"other/apifox.md","filePath":"other/apifox.md"}'),p={name:"other/apifox.md"},i=o("",4),r=[i];function n(m,s,_,c,h,u){return e(),t("div",null,r)}const l=a(p,[["render",n]]);export{d as __pageData,l as default};
