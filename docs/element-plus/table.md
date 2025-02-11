@@ -1,6 +1,122 @@
 # [Table 表格](https://element-plus.org/zh-CN/component/table.html)
 用于展示多条结构类似的数据， 可对数据进行排序、筛选、对比或其他自定义操作
 
+## 拖拽排序
+
+- 注意：必须要定义 `row-key="ID"`，否者会导致拖拽顺序错乱
+- 如果row-key绑定的字段名没有在数组列表中出现，将会导致 `<el-table-column type="index" label="序号" />` 索引值顺序不对（例如：拖拽后不是按照1、2、3、...的顺序排列）
+
+```js
+<template>
+    <el-table
+        ref="tableRef"
+        :data="tableData"
+        style="width: 100%"
+        @selection-change="handleSelectionChange"
+    >
+        <el-table-column label="序号" width="55" align="center">
+            <template slot-scope="scope">
+                <span>{{ (userParams._PAGE_.NOWPAGE - 1) * userParams._PAGE_.SHOWNUM + scope.$index + 1 }}</span>
+            </template>
+        </el-table-column>
+
+        <el-table-column label="姓名">
+            <template slot-scope="scope">
+                <el-input v-model="scope.row.USER_NAME" @change="changeInput(scope.row)" />
+            </template>
+        </el-table-column>
+    </el-table>
+</template>
+
+<script>
+import Sortable from 'sortablejs' // 拖拽插件
+
+export default {
+    data() {
+        return {
+            tableData: [],
+            multipleSelection: []
+        }
+    },
+    async mounted() {
+        await this.initSortable()
+    },
+    methods: {
+        // 初始化拖拽
+        initSortable() {
+            const that = this
+            that.$nextTick(() => {
+                const el = that.$refs.tableRef.$el.querySelectorAll('.el-table__body-wrapper > table > tbody')[0]
+                Sortable.create(el, {
+                draggable: '.el-table__row', // 设置可拖拽行的类名(el-table自带的类名)
+                onEnd({ newIndex, oldIndex }) {
+                    if (newIndex === oldIndex) return // 如果位置一样return
+                        const targetRow = that.userData.splice(oldIndex, 1)[0]
+                        that.userData.splice(newIndex, 0, targetRow)
+                        that.userData.forEach((item, index) => {
+                        item.USER_SORT = index
+                    })
+
+                    // api 接口调用
+                    const obj = {
+                        USER_LIST: that.userData
+                    }
+                    that.$api.doAct('OA_ADDRESS_BOOK', 'updateByUserBeanList', obj).then(res => {
+                    }).catch((e) => that.$message.success(e))
+                }
+                })
+            })
+        },
+    },
+}
+</script>
+```
+
+## 行内编辑带选择框
+```js
+<template>
+    <el-table
+        ref="tableRef"
+        :data="tableData"
+        style="width: 100%"
+        @selection-change="handleSelectionChange"
+    >
+        <el-table-column type="selection" width="50" align="center" />
+
+        <el-table-column label="序号" width="55" align="center">
+            <template slot-scope="scope">
+                <span>{{ (userParams._PAGE_.NOWPAGE - 1) * userParams._PAGE_.SHOWNUM + scope.$index + 1 }}</span>
+            </template>
+        </el-table-column>
+
+        <el-table-column label="姓名">
+            <template slot-scope="scope">
+                <el-input v-model="scope.row.USER_NAME" @change="changeInput(scope.row)" />
+            </template>
+        </el-table-column>
+    </el-table>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            tableData: [],
+            multipleSelection: []
+        }
+    },
+    methods: {
+        handleSelectionChange(val) {
+            this.multipleSelection = val
+        },
+        changeInput(row) {
+            this.$refs.tableRef.toggleRowSelection(row, true)
+        },
+    },
+}
+</script>
+```
+
 ## selection 是否可以选中
 ```vue
 <el-table-column type="selection" :selectable="selectable" />
@@ -146,7 +262,7 @@ const handleCurrentChange = (val) => {
     tablePage.value.NOWPAGE = val
     getDataList()
 }
-</script>
+</、script>
 
 <style lang="scss" scoped>
 .el-pagination {
