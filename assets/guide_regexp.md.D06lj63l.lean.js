@@ -1,0 +1,1 @@
+import{_ as i,c as s,o as a,a4 as h}from"./chunks/framework.DqHORQeI.js";const o=JSON.parse('{"title":"正则验证","description":"","frontmatter":{},"headers":[],"relativePath":"guide/regexp.md","filePath":"guide/regexp.md"}'),k={name:"guide/regexp.md"},t=h("",5),n=[t];function l(p,e,d,r,F,g){return a(),s("div",null,n)}const D=i(k,[["render",l]]);export{o as __pageData,D as default};
