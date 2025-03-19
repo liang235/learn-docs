@@ -1,6 +1,6 @@
 # [isEqual](https://www.lodashjs.com/docs/lodash.isEqual)
 
-执行深比较来确定两者的值是否相等
+执行深比较来确定两者的值是否相等，可以用来判断 `对象/数组` 是否相等
 
 ## 使用
 

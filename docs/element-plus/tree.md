@@ -1,6 +1,13 @@
 # [Tree 树形控件](https://element-plus.gitee.io/zh-CN/component/tree.html)
 
+## show-checkbox 有的节点不需要复选框
+
+```js
+
+```
+
 ## 懒加载
+
 ```js
 <template>
     <el-tree
@@ -46,6 +53,7 @@ export default {
 ```
 
 ## 设置横向滚动条
+
 ``` scss
 .el-tree {
     overflow: auto;
