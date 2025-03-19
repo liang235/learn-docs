@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.DqHORQeI.js";const F=JSON.parse('{"title":"工具库","description":"","frontmatter":{},"headers":[],"relativePath":"guide/tools.md","filePath":"guide/tools.md"}'),h={name:"guide/tools.md"},l=n("",12),p=[l];function k(t,e,r,E,d,g){return a(),i("div",null,p)}const c=s(h,[["render",k]]);export{F as __pageData,c as default};

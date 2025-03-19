@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.DqHORQeI.js";const c=JSON.parse('{"title":"date","description":"","frontmatter":{},"headers":[],"relativePath":"tools/date.md","filePath":"tools/date.md"}'),l={name:"tools/date.md"},h=n("",6),p=[h];function e(k,t,r,d,E,g){return a(),i("div",null,p)}const F=s(l,[["render",e]]);export{c as __pageData,F as default};

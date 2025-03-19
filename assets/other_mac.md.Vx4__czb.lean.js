@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as n,a4 as e}from"./chunks/framework.DqHORQeI.js";const u=JSON.parse('{"title":"Mac","description":"","frontmatter":{},"headers":[],"relativePath":"other/mac.md","filePath":"other/mac.md"}'),p={name:"other/mac.md"},c=e("",6),l=[c];function i(o,r,t,d,m,h){return n(),s("div",null,l)}const _=a(p,[["render",i]]);export{u as __pageData,_ as default};

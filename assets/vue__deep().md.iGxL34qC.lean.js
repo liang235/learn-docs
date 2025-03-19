@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.DqHORQeI.js";const o=JSON.parse('{"title":":deep()","description":"","frontmatter":{},"headers":[],"relativePath":"vue/:deep().md","filePath":"vue/:deep().md"}'),e={name:"vue/:deep().md"},t=n("",11),l=[t];function p(h,k,d,r,E,g){return a(),i("div",null,l)}const y=s(e,[["render",p]]);export{o as __pageData,y as default};
